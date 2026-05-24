@@ -1,0 +1,252 @@
+@prefix : <https://w3id.org/crima-ontology/ar6-impact#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cclc: <https://w3id.org/crima-ontology/cclc#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <https://w3id.org/crima-ontology/ar6-impact#> .
+
+<https://w3id.org/crima-ontology/ar6-impact#> rdf:type owl:Ontology ;
+                                                      owl:imports cclc: ,
+                                                                  <http://www.w3.org/2004/02/skos/core> ;
+                                                      vann:preferredNamespacePrefix "ar6-impact" ;
+                                                      vann:preferredNamespaceUri "https://w3id.org/crima-ontology/ar6-impact#"^^xsd:anyURI ;
+                                                      voaf:extends cclc: ,
+                                                                   <http://www.w3.org/2004/02/skos/core> ;
+                                                      voaf:metadataVoc vann: ,
+                                                                       <http://purl.org/vocommons/voaf> ;
+                                                      voaf:specializes <http://www.w3.org/2004/02/skos/core> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocommons/voaf#extends
+voaf:extends rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocommons/voaf#metadataVoc
+voaf:metadataVoc rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocommons/voaf#specializes
+voaf:specializes rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/crima-ontology/ar6-impact#Impact-cluster
+:Impact-cluster rdf:type owl:Class ;
+                rdfs:subClassOf skos:Concept ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty skos:broader ;
+                                  owl:allValuesFrom :Impact-type
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty skos:inScheme ;
+                                  owl:allValuesFrom :ObservedImpacts
+                                ] .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#Impact-specificType
+:Impact-specificType rdf:type owl:Class ;
+                     rdfs:subClassOf skos:Concept ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty skos:broader ;
+                                       owl:allValuesFrom :Impact-cluster
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty skos:inScheme ;
+                                       owl:allValuesFrom :ObservedImpacts
+                                     ] .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#Impact-type
+:Impact-type rdf:type owl:Class ;
+             rdfs:subClassOf skos:Concept ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty skos:inScheme ;
+                               owl:allValuesFrom :ObservedImpacts
+                             ] .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts
+:ObservedImpacts rdf:type owl:Class ;
+                 rdfs:subClassOf skos:ConceptScheme .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/crima-ontology/ar6-impact#AgriCropProduction
+:AgriCropProduction rdf:type owl:NamedIndividual ,
+                             :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#AnimalAndLivestockHealthAndProductivity
+:AnimalAndLivestockHealthAndProductivity rdf:type owl:NamedIndividual ,
+                                                  :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ChangesInEcosystemStructure
+:ChangesInEcosystemStructure rdf:type owl:NamedIndividual ,
+                                      :Impact-cluster ;
+                             skos:broader :ImpactOnEcosystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ChangesInFreshwaterEcosystem
+:ChangesInFreshwaterEcosystem rdf:type owl:NamedIndividual ,
+                                       :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ChangesInOceanEcosystem
+:ChangesInOceanEcosystem rdf:type owl:NamedIndividual ,
+                                  :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ChangesInTerrestrialEcosystem
+:ChangesInTerrestrialEcosystem rdf:type owl:NamedIndividual ,
+                                        :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#DamagesToInfrastructure
+:DamagesToInfrastructure rdf:type owl:NamedIndividual ,
+                                  :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#DamagesToKeyEconomicInfrastructures
+:DamagesToKeyEconomicInfrastructures rdf:type owl:NamedIndividual ,
+                                              :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#Displacement
+:Displacement rdf:type owl:NamedIndividual ,
+                       :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#FisheriesAndAquacultureProduction
+:FisheriesAndAquacultureProduction rdf:type owl:NamedIndividual ,
+                                            :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#FloodStormDamagesInCoastalAreas
+:FloodStormDamagesInCoastalAreas rdf:type owl:NamedIndividual ,
+                                          :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#FreshwaterEcosystemPhenologyChanges
+:FreshwaterEcosystemPhenologyChanges rdf:type owl:NamedIndividual ,
+                                              :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#FreshwaterSpeciesShift
+:FreshwaterSpeciesShift rdf:type owl:NamedIndividual ,
+                                 :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#HealthMalnutritionAndOther
+:HealthMalnutritionAndOther rdf:type owl:NamedIndividual ,
+                                     :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ImpactOnCitiesSettlementsInfrastructures
+:ImpactOnCitiesSettlementsInfrastructures rdf:type owl:NamedIndividual ,
+                                                   :Impact-cluster ;
+                                          skos:broader :ImpactOnHumanSystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems
+:ImpactOnEcosystems rdf:type owl:NamedIndividual ,
+                             :Impact-type .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ImpactOnHealthAndWellbeing
+:ImpactOnHealthAndWellbeing rdf:type owl:NamedIndividual ,
+                                     :Impact-cluster ;
+                            skos:broader :ImpactOnHumanSystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems
+:ImpactOnHumanSystems rdf:type owl:NamedIndividual ,
+                               :Impact-type .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#ImpactOnWaterScarcityAndFoodProduction
+:ImpactOnWaterScarcityAndFoodProduction rdf:type owl:NamedIndividual ,
+                                                 :Impact-cluster ;
+                                        skos:broader :ImpactOnHumanSystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#InfectiousDiseases
+:InfectiousDiseases rdf:type owl:NamedIndividual ,
+                             :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#InlandFoodingAndAssociatedDamages
+:InlandFoodingAndAssociatedDamages rdf:type owl:NamedIndividual ,
+                                            :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#MentalHealth
+:MentalHealth rdf:type owl:NamedIndividual ,
+                       :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#OceanEcosystemPhenologyChanges
+:OceanEcosystemPhenologyChanges rdf:type owl:NamedIndividual ,
+                                         :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#OceanSpeciesShift
+:OceanSpeciesShift rdf:type owl:NamedIndividual ,
+                            :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#PhenologyChanges
+:PhenologyChanges rdf:type owl:NamedIndividual ,
+                           :Impact-cluster ;
+                  skos:broader :ImpactOnEcosystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#SpeciesRangeShift
+:SpeciesRangeShift rdf:type owl:NamedIndividual ,
+                            :Impact-cluster ;
+                   skos:broader :ImpactOnEcosystems .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#TerrestrialEcosystemPhenologyChanges
+:TerrestrialEcosystemPhenologyChanges rdf:type owl:NamedIndividual ,
+                                               :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#TerrestrialSpeciesShift
+:TerrestrialSpeciesShift rdf:type owl:NamedIndividual ,
+                                  :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#WaterScarcity
+:WaterScarcity rdf:type owl:NamedIndividual ,
+                        :Impact-specificType .
+
+
+###  https://w3id.org/crima-ontology/ar6-impact#observed-impacts-list
+:observed-impacts-list rdf:type owl:NamedIndividual ,
+                                :ObservedImpacts .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
