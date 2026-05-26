@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:voaf="http://purl.org/vocommons/voaf#"
+>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <vann:preferredNamespacePrefix>emdat</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/crima-ontology/emdat#</vann:preferredNamespaceUri>
+    <voaf:extends rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocab/vann/"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocommons/voaf"/>
+    <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#hasSubtype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/crima-ontology/emdat#emdat-subtype"/>
+    <rdfs:comment>Links a record-level EM-DAT classification to its leaf subtype concept.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-subtype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b4"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#emdat-subgroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:isDefinedBy>https://council.science/wp-content/uploads/2019/12/Peril-Classification-and-Hazard-Glossary-1.pdf</rdfs:isDefinedBy>
+    <rdfs:seeAlso>Integrated Research on Disaster Risk. (2014). Peril Classification and Hazard Glossary (IRDR DATA Publication No. 1). Beijing: Integrated Research on Disaster Risk.</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#emdat-group"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-disasters-classification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"/>
+    <rdfs:comment>The main classification tree has four levels of depth, so disasters are divided into groups, subgroups, types, and subtypes, as presented in the EM-DAT Public Table columns. The two EM-DAT disaster groups are 'Natural' and 'Technological'. The table below shows the complete tree for the 'Natural' and 'Technological' groups, with the occurrence for each subtype. Their corresponding definitions are available in the Classification Glossary.</rdfs:comment>
+    <rdfs:isDefinedBy>https://doc.emdat.be/docs/data-structure-and-content/disaster-classification-system/</rdfs:isDefinedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-subgroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b2"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-classificationEntry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment>A record-level EM-DAT classification identified by classification_key, corresponding to one full classification path in the source table.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-group">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/emdat#emdat-type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b6"/>
+    <rdfs:subClassOf rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#metadataVoc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n0458ac64dc1d4b20a6e9a5912eaa8989b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/emdat#emdat-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ccore#CascadingEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#extends">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ccore#Hazard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

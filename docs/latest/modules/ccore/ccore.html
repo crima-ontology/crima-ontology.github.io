@@ -1,0 +1,5292 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Generated documentation for module ccore">
+      
+      
+      
+        <link rel="canonical" href="https://crima-ontology.github.io/modules/ccore/ccore.html">
+      
+      
+        <link rel="prev" href="../ctlo/ctlo.html">
+      
+      
+        <link rel="next" href="../ich/ich.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>ccore - CRIMA Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ccore" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="CRIMA Ontology" class="md-header__button md-logo" aria-label="CRIMA Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CRIMA Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ccore
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/crima-ontology/ontology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    crima-ontology/ontology
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="CRIMA Ontology" class="md-nav__button md-logo" aria-label="CRIMA Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CRIMA Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/crima-ontology/ontology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    crima-ontology/ontology
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../main/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main modules
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ctlo/ctlo.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ctlo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ccore
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ccore.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ccore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#AdaptationOption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adaptation Option
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CascadingEvent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cascading Event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ClimaticImpactDriver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Climatic Impact Driver
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Commitment-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CommitmentBasedService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EcosystemService" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EcosystemService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ElementAtRisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element At Risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exposure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ExtrinsicVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extrinsic Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#IntrinsicVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intrinsic Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#MeteorologicalObservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meteorological Observation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#TemporalPrecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporal Precision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ThreatPerdurant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Perdurant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#UnintensionallyProvided" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unintensionally Provided
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classifiedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        classified by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        classifies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedElement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed element
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedElementOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed element of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedTo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed to
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasSpatialExtent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has spatial extent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasTemporalExtent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has temporal extent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impactedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        impacted by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impactsOn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        impacts on
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        influences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheresIn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        inheres in
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intendedGoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        intended goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isQualityOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is quality of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manifestedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        manifested by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#participantOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        participant of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyContent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proxy content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyContentFor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proxy content for
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        reduces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refersTo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        refers to
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporalPrecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        temporal precision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threatPerdurant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        threat perdurant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        triggers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotation-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annotation Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Annotation Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        references
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namespaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ich/ich.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ich
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../terminology/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminology modules
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terminology modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ar5-adapt/ar5-adapt.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ar5-adapt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ar6-cid/ar6-cid.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ar6-cid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ar6-impact/ar6-impact.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ar6-impact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cclc/cclc.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    cclc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecv/ecv.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ecv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emdat/emdat.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    emdat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hip/hip.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    hip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cunit/cunit.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    cunit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../helper/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Helper modules
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Helper modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cbib/cbib.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    cbib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cplace/cplace.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    cplace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crid/crid.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    crid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#AdaptationOption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adaptation Option
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CascadingEvent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cascading Event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ClimaticImpactDriver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Climatic Impact Driver
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Commitment-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CommitmentBasedService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EcosystemService" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EcosystemService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ElementAtRisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element At Risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exposure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ExtrinsicVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extrinsic Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#IntrinsicVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intrinsic Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#MeteorologicalObservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meteorological Observation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#TemporalPrecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporal Precision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ThreatPerdurant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Perdurant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#UnintensionallyProvided" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unintensionally Provided
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classifiedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        classified by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        classifies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedElement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed element
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedElementOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed element of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposedTo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exposed to
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasSpatialExtent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has spatial extent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasTemporalExtent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has temporal extent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasVulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        has vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impactedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        impacted by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impactsOn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        impacts on
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        influences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheresIn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        inheres in
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intendedGoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        intended goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isQualityOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is quality of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manifestedBy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        manifested by
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#participantOf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        participant of
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyContent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proxy content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyContentFor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proxy content for
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        reduces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refersTo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        refers to
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporalPrecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        temporal precision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threatPerdurant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        threat perdurant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        triggers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotation-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annotation Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Annotation Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        references
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namespaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../index.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../main/index.html" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Main modules
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ccore">ccore<a class="headerlink" href="#ccore" title="Permanent link">&para;</a></h1>
+<div class="pylode">
+    <a class="md-button" target="_blank" href="ccore.ttl">ttl</a>
+    <a class="md-button" target="_blank" href="ccore.rdf">rdf</a>
+    <a class="md-button" target="_blank" href="ccore.nt">nt</a>
+    <a class="md-button" target="_blank" href="ccore.json">json</a>
+</div>
+
+<h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
+<div class="pylode">
+ <dl>
+  <div>
+   <dt>
+    <strong>
+     IRI
+    </strong>
+   </dt>
+   <dd>
+    <code>
+     https://w3id.org/crima-ontology/ccore#
+    </code>
+   </dd>
+  </div>
+  <div>
+   <dt>
+    <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">
+     Title
+    </a>
+   </dt>
+   <dd>
+    <p>
+     ccore
+    </p>
+   </dd>
+  </div>
+  <div>
+   <dt>
+    <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">
+     Preferred Namespace Prefix
+    </a>
+   </dt>
+   <dd>
+    <p>
+     ccore
+    </p>
+   </dd>
+  </div>
+  <div>
+   <dt>
+    <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">
+     Preferred Namespace Uri
+    </a>
+   </dt>
+   <dd>
+    <a href="https://w3id.org/crima-ontology/ccore#">
+     ccore:
+    </a>
+   </dd>
+  </div>
+  <div>
+   <dt>
+    <a class="hover_property" href="http://www.w3.org/2002/07/owl#imports" title="The property that is used for importing other ontologies into a given ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">
+     Imports
+    </a>
+   </dt>
+   <dd>
+    <ul>
+     <li>
+      <a href="http://knowwheregraph/ontology/dpo">
+       http://knowwheregraph/ontology/dpo
+      </a>
+     </li>
+     <li>
+      <a href="http://www.opengis.net/ont/geosparql">
+       http://www.opengis.net/ont/geosparql
+      </a>
+     </li>
+     <li>
+      <a href="http://www.w3.org/2004/02/skos/core">
+       SKOS Vocabulary
+      </a>
+     </li>
+     <li>
+      <a href="http://www.w3.org/2006/time">
+       http://www.w3.org/2006/time
+      </a>
+     </li>
+     <li>
+      <a href="http://www.w3.org/ns/sosa/obs/">
+       sosa-obs:
+      </a>
+     </li>
+     <li>
+      <a href="https://w3id.org/crima-ontology/ctlo#">
+       ctlo:
+      </a>
+     </li>
+    </ul>
+   </dd>
+  </div>
+ </dl>
+</div>
+
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<h3 id="concept">Concept<a class="headerlink" href="#concept" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     http://www.w3.org/2004/02/skos/core#Concept
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#classifies">
+      ccore:classifies
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="AdaptationOption">Adaptation Option<a class="headerlink" href="#AdaptationOption" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#AdaptationOption
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     In human systems, the process of adjustment to actual or expected climate and its effects, in order to moderate harm or exploit beneficial opportunities. In natural systems, the process of adjustment to actual climate and its effects; human intervention may facilitate adjustment to expected climate and its effects. See also Adaptation options, Adaptive capacity and Maladaptive actions (Maladaptation).
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/source" title="A related resource from which the described resource is derived. Defined in DCMI Metadata Terms">
+     Source
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       IPCC, 2021: Annex VII: Glossary [Matthews, J.B.R., V. Möller, R. van Diemen, J.S. Fuglestvedt, V. Masson-Delmotte, C. Méndez, S. Semenov, A. Reisinger (eds.)]. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 2215-2256, doi:10.1017/9781009157896.022.
+      </p>
+     </li>
+     <li>
+      <p>
+       Noble, I.R., S. Huq, Y.A. Anokhin, J. Carmin, D. Goudou, F.P. Lansigan, B. Osman-Elasha, and A. Villamizar, 2014: Adaptation needs and options. In: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part A: Global and Sectoral Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change[Field, C.B., V.R. Barros, D.J. Dokken, K.J. Mach, M.D. Mastrandrea, T.E. Bilir, M. Chatterjee, K.L. Ebi, Y.O. Estrada, R.C. Genova, B. Girma, E.S. Kissel, A.N. Levy, S. MacCracken, P.R. Mastrandrea, and L.L. White (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 833-868.
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#reduces">
+      ccore:reduces
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="CascadingEvent">Cascading Event<a class="headerlink" href="#CascadingEvent" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#CascadingEvent
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     CascadingEvent(E) --&gt; ∃ E1 ThreatPerdurant(E), triggers(E1, E) .
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <span>
+     <span>
+      <a href="n3b039a365d7b4e6784f586ce4a1bb74eb30">
+       n3b039a365d7b4e6784f586ce4a1bb74eb30
+      </a>
+      <span>
+       <span class="cardinality">
+        some
+       </span>
+       <span>
+        <span>
+         <a href="#ThreatPerdurant">
+          ccore:ThreatPerdurant
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </span>
+      </span>
+      <br/>
+     </span>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="ClimaticImpactDriver">Climatic Impact Driver<a class="headerlink" href="#ClimaticImpactDriver" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#ClimaticImpactDriver
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+     Is Defined By
+    </a>
+   </th>
+   <td>
+    <p>
+     IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     Climatic impact-driver (CID) Climatic impact-drivers (CIDs) are physical climate system conditions (e.g., means, events, extremes) that affect an element of society or ecosystems. Depending on system tolerance, CIDs and their changes can be detrimental, beneficial, neutral or a mixture of each across interacting system elements and regions. See also Risk, Hazard and Impacts (consequences, outcomes).
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#Process">
+      ctlo:Process
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#Event">
+      ctlo:Event
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Commitment-based">CommitmentBasedService<a class="headerlink" href="#Commitment-based" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Commitment-based
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="EcosystemService">EcosystemService<a class="headerlink" href="#EcosystemService" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#EcosystemService
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     EcosystemService is the benefit/outcome that natural ecosystems provide to humans, such as health and well-being, and then is useful for humans due to its value. EcosystemService is included in the ecosystem service (ESs) cascade.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+     Super Class Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <a href="#CommitmentBasedService">
+        CommitmentBasedService
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#UnintensionallyProvided">
+        ccore:UnintensionallyProvided
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="ElementAtRisk">Element At Risk<a class="headerlink" href="#ElementAtRisk" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#ElementAtRisk
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       ElementAtRisk(O) --&gt;
+∃ I, P. impactsOn(I, O), dpo:resultOf(I, P),
+threatPerdurant(O, P) .
+      </p>
+     </li>
+     <li>
+      <p>
+       We say that an element is 'at risk' with respect to a certain threat perdurant if it is a service or a physical endurant for which an impact has been documented that results from the same threat perdurant and impacts on that element.
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#threatPerdurant">
+          ccore:threatPerdurant
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="#ThreatPerdurant">
+            ccore:ThreatPerdurant
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <a href="n3b039a365d7b4e6784f586ce4a1bb74eb36">
+         n3b039a365d7b4e6784f586ce4a1bb74eb36
+        </a>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb37">
+            n3b039a365d7b4e6784f586ce4a1bb74eb37
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Exposure">Exposure<a class="headerlink" href="#Exposure" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Exposure
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+     Is Defined By
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       Exposure(Exp) --&gt;
+∃ O, P. participantOf(O, P), exposedElement(Exp, O), exposedTo(Exp, P) .
+      </p>
+     </li>
+     <li>
+      <p>
+       IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002.
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     The presence of people; livelihoods; species or ecosystems; environmental functions, services, and resources; infrastructure; or economic, social, or cultural assets in places and settings that could be adversely affected.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <a href="https://w3id.org/crima-ontology/ctlo#Quality">
+     ctlo:Quality
+    </a>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <a href="#exposedElement">
+        ccore:exposedElement
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#exposedTo">
+        ccore:exposedTo
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#influences">
+        ccore:influences
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#exposedElement">
+          ccore:exposedElement
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb42">
+            n3b039a365d7b4e6784f586ce4a1bb74eb42
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#exposedTo">
+          ccore:exposedTo
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="#ThreatPerdurant">
+            ccore:ThreatPerdurant
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="ExtrinsicVulnerability">Extrinsic Vulnerability<a class="headerlink" href="#ExtrinsicVulnerability" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#ExtrinsicVulnerability
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Goal">Goal<a class="headerlink" href="#Goal" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Goal
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     "Things do not just have value, they have value for someone, and in case their aﬀordances enable certain happenings that positively contribute to the achievement of one's goals. Analogously, things are only at risk from one's perspective, in case their vulnerabilities enable happenings that hurt one's goals."
+Sales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., &amp; Mylopoulos, J. (2018, September). The common ontology of value and risk. In International conference on conceptual modeling (pp. 121-135). Cham: Springer International Publishing.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#intendedGoal">
+      ccore:intendedGoal
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+     In Range Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#refersTo">
+      ccore:refersTo
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Hazard">Hazard<a class="headerlink" href="#Hazard" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Hazard
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+     Is Defined By
+    </a>
+   </th>
+   <td>
+    <p>
+     IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       Hazard(E) --&gt; ∀ E1 ¬triggers(E1, E) .
+      </p>
+     </li>
+     <li>
+      <p>
+       The potential occurrence of a natural or human-induced physical event or trend that may cause loss of life, injury, or other health impacts, as well as damage and loss to property, infrastructure, livelihoods, service provision, ecosystems and environmental resources. See also Impacts (consequences, outcomes) and Risk.
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <span>
+     <span>
+      <a href="n3b039a365d7b4e6784f586ce4a1bb74eb47">
+       n3b039a365d7b4e6784f586ce4a1bb74eb47
+      </a>
+      <span>
+       <span class="cardinality">
+        only
+       </span>
+       <span>
+        <span>
+         <a href="n3b039a365d7b4e6784f586ce4a1bb74eb48">
+          n3b039a365d7b4e6784f586ce4a1bb74eb48
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </span>
+      </span>
+      <br/>
+     </span>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Impact">Impact<a class="headerlink" href="#Impact" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Impact
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+     Is Defined By
+    </a>
+   </th>
+   <td>
+    <p>
+     IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       Impact(I) --&gt;
+∃ O, Exp, V, P, G. (PhysicalEndurant(O) ∨ EcosystemService(O)), Exposure(Exp), Vulnerability(V), ThreatPerdurant(P), Goal(G)
+inheresIn(V, O), manifestedBy(V, P), refersTo(V, G),
+exposedElement(Exp, O), exposedTo(Exp, P),
+intendedGoal(O, G),
+impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo:resultOf(I, P) .
+      </p>
+     </li>
+     <li>
+      <p>
+       The consequences of realized risks on natural and human systems, where risks result from the interactions of climate-related hazards (including extreme weather/climate events), exposure, and vulnerability. Impacts generally refer to effects on lives, livelihoods, health and well-being, ecosystems and species, economic, social and cultural assets, services (including ecosystem services), and infrastructure. Impacts may be referred to as consequences or outcomes and can be adverse or beneficial. See also Adaptation, Exposure, Hazard, Vulnerability and Risk.
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <a href="http://knowwheregraph/ontology/dpo#resultOf">
+       dpo:resultOf
+      </a>
+     </li>
+     <li>
+      <span>
+       <a href="#impactsOn">
+        ccore:impactsOn
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+     In Range Of
+    </a>
+   </th>
+   <td>
+    <a href="http://knowwheregraph/ontology/dpo#determinesImpact">
+     dpo:determinesImpact
+    </a>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <span>
+        <a href="http://knowwheregraph/ontology/dpo#dependsOn">
+         dpo:dependsOn
+        </a>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb50">
+            n3b039a365d7b4e6784f586ce4a1bb74eb50
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <a href="http://knowwheregraph/ontology/dpo#dependsOn">
+         dpo:dependsOn
+        </a>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb60">
+            n3b039a365d7b4e6784f586ce4a1bb74eb60
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <a href="http://knowwheregraph/ontology/dpo#resultOf">
+         dpo:resultOf
+        </a>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="#ThreatPerdurant">
+            ccore:ThreatPerdurant
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#impactsOn">
+          ccore:impactsOn
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb73">
+            n3b039a365d7b4e6784f586ce4a1bb74eb73
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#refersTo">
+          ccore:refersTo
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb77">
+            n3b039a365d7b4e6784f586ce4a1bb74eb77
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="IntrinsicVulnerability">Intrinsic Vulnerability<a class="headerlink" href="#IntrinsicVulnerability" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#IntrinsicVulnerability
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="MeteorologicalObservation">Meteorological Observation<a class="headerlink" href="#MeteorologicalObservation" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#MeteorologicalObservation
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <a href="http://www.w3.org/ns/sosa/Observation">
+     sosa:Observation
+    </a>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="TemporalPrecision">Temporal Precision<a class="headerlink" href="#TemporalPrecision" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#TemporalPrecision
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     A classification of the granularity at which a temporal value is known.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+     In Range Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#temporalPrecision">
+      temporal precision
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="ThreatPerdurant">Threat Perdurant<a class="headerlink" href="#ThreatPerdurant" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#ThreatPerdurant
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#Process">
+      ctlo:Process
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#Event">
+      ctlo:Event
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#triggers">
+      ccore:triggers
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+     In Range Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <a href="http://knowwheregraph/ontology/dpo#resultOf">
+       dpo:resultOf
+      </a>
+     </li>
+     <li>
+      <span>
+       <a href="#exposedTo">
+        ccore:exposedTo
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#manifestedBy">
+        ccore:manifestedBy
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#participantOf">
+        ccore:participantOf
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#threatPerdurant">
+        ccore:threatPerdurant
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#triggers">
+        ccore:triggers
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+     Super Class Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <a href="#CascadingEvent">
+        ccore:CascadingEvent
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#Hazard">
+        ccore:Hazard
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="UnintensionallyProvided">Unintensionally Provided<a class="headerlink" href="#UnintensionallyProvided" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#UnintensionallyProvided
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="Vulnerability">Vulnerability<a class="headerlink" href="#Vulnerability" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#Vulnerability
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     Vulnerability(V) --&gt;
+∃ O, P, Q1, G. PhysicalEndurant(O) ∨ EcosystemService(O), ThreatPerdurant(P), Quality(Q1), Goal(G),
+participantOf(O, P), isQualityOf(Q1, O), intendedGoalFor(G, O),
+inheresIn(V, O), proxyContent(V, Q1), manifestedBy(V, P), refersTo(V, G) .
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Class Of
+    </a>
+   </th>
+   <td>
+    <a href="https://w3id.org/crima-ontology/ctlo#Quality">
+     ctlo:Quality
+    </a>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+     In Domain Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <a href="#inheresIn">
+        ccore:inheresIn
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#manifestedBy">
+        ccore:manifestedBy
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#proxyContent">
+        ccore:proxyContent
+       </a>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+     In Range Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#influences">
+      ccore:influences
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+     Restriction
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#inheresIn">
+          ccore:inheresIn
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb88">
+            n3b039a365d7b4e6784f586ce4a1bb74eb88
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#manifestedBy">
+          ccore:manifestedBy
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="#ThreatPerdurant">
+            ccore:ThreatPerdurant
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#proxyContent">
+          ccore:proxyContent
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="https://w3id.org/crima-ontology/ctlo#Quality">
+            ctlo:Quality
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+     <li>
+      <span>
+       <span>
+        <span>
+         <a href="#refersTo">
+          ccore:refersTo
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+        <span>
+         <span class="cardinality">
+          some
+         </span>
+         <span>
+          <span>
+           <a href="#Goal">
+            ccore:Goal
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </span>
+        </span>
+        <br/>
+       </span>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+     Super Class Of
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <span>
+       <a href="#ExtrinsicVulnerability">
+        ccore:ExtrinsicVulnerability
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+     <li>
+      <span>
+       <a href="#IntrinsicVulnerability">
+        ccore:IntrinsicVulnerability
+       </a>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </span>
+     </li>
+    </ul>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h2 id="object-properties">Object Properties<a class="headerlink" href="#object-properties" title="Permanent link">&para;</a></h2>
+<h3 id="classifiedBy">classified by<a class="headerlink" href="#classifiedBy" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#classifiedBy
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="classifies">classifies<a class="headerlink" href="#classifies" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#classifies
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept">
+      Concept
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="exposedElement">exposed element<a class="headerlink" href="#exposedElement" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#exposedElement
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Exposure">
+      ccore:Exposure
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="exposedElementOf">exposed element of<a class="headerlink" href="#exposedElementOf" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#exposedElementOf
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="exposedTo">exposed to<a class="headerlink" href="#exposedTo" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#exposedTo
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Exposure">
+      ccore:Exposure
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="hasSpatialExtent">has spatial extent<a class="headerlink" href="#hasSpatialExtent" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#hasSpatialExtent
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     The property is meant to be used to represent the spatial scope of any thing as assessed by an agent (e.g. a municipality, a point of interest), not necessarily corresponding to the exact spatial extension of the phenomenon at the geophysical level.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Property Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">
+      topObjectProperty
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <a href="http://www.opengis.net/ont/geosparql#SpatialObject">
+     geo:SpatialObject
+    </a>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="hasTemporalExtent">has temporal extent<a class="headerlink" href="#hasTemporalExtent" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#hasTemporalExtent
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     The property is meant to be used to represent the temporal scope of any thing as assessed by an agent, not necessarily corresponding to the exact temporal extension of the phenomenon at the geophysical level.
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Property Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">
+      topObjectProperty
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="hasVulnerability">has vulnerability<a class="headerlink" href="#hasVulnerability" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#hasVulnerability
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="impactedBy">impacted by<a class="headerlink" href="#impactedBy" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#impactedBy
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="impactsOn">impacts on<a class="headerlink" href="#impactsOn" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#impactsOn
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Impact">
+      ccore:Impact
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="influences">influences<a class="headerlink" href="#influences" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#influences
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       [According to the diagrams in https://github.com/KnowWhereGraph/dmdo/blob/main/modules/disaster-properties-module/schema-diagrams/vulnerability.PNG this should be http://knowwheregraph/ontology/dpo#influences but, the property is not present in the formal specification of dpo.]
+      </p>
+     </li>
+     <li>
+      <p>
+       dpo:influences(Exp, V) --&gt; 
+∃ O, P. Exposure(Exp), Vulnerability(V), PhysicalEndurant(O), ThreatPerdurant(P),
+exposedObject(Exp, O), participates(Exp, P),
+inheresIn(V, O), manifestedBy(V, P) .
+      </p>
+      <p>
+       dpo:influences(Exp, V) --&gt; Exposure(Exp), Vulnerability(V) .
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Exposure">
+      ccore:Exposure
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="inheresIn">inheres in<a class="headerlink" href="#inheresIn" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#inheresIn
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Property Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#isQualityOf">
+      ccore:isQualityOf
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="intendedGoal">intended goal<a class="headerlink" href="#intendedGoal" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#intendedGoal
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Goal">
+      ccore:Goal
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="isQualityOf">is quality of<a class="headerlink" href="#isQualityOf" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#isQualityOf
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">
+     Super Property Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#inheresIn">
+      ccore:inheresIn
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <a href="https://w3id.org/crima-ontology/ctlo#Quality">
+     ctlo:Quality
+    </a>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="manifestedBy">manifested by<a class="headerlink" href="#manifestedBy" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#manifestedBy
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="participantOf">participant of<a class="headerlink" href="#participantOf" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#participantOf
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     participantOf(E, P) --&gt; 
+∃ G, G1, T, T1. ThreatPerdurant(P),
+hasGeometry(E, G), hasTime(E, T), hasGeometry(P, G1), hasTime(P, T1),
+geo:sfIntersect(G, G1), time:notDisjoint(T, T1) .
+    </p>
+    <p>
+     participantOf(E, P) --&gt; (EcosystemService(E) ∨ PhysicalEndurant(E)), ThreatPerdurant(P)
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#EcosystemService">
+      EcosystemService
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="proxyContent">proxy content<a class="headerlink" href="#proxyContent" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#proxyContent
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <a href="https://w3id.org/crima-ontology/ctlo#Quality">
+     ctlo:Quality
+    </a>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="proxyContentFor">proxy content for<a class="headerlink" href="#proxyContentFor" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#proxyContentFor
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="reduces">reduces<a class="headerlink" href="#reduces" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#reduces
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#AdaptationOption">
+      ccore:AdaptationOption
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#Exposure">
+      ccore:Exposure
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="refersTo">refers to<a class="headerlink" href="#refersTo" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#refersTo
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Vulnerability">
+      ccore:Vulnerability
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+    <span class="cardinality">
+     or
+    </span>
+    <span>
+     <a href="#Impact">
+      ccore:Impact
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#Goal">
+      ccore:Goal
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="temporalPrecision">temporal precision<a class="headerlink" href="#temporalPrecision" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#temporalPrecision
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <p>
+     Specifies the granularity or precision with which a temporal entity is known or recorded (e.g., year, month, day, exact).
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <a href="http://www.w3.org/2006/time#TemporalEntity">
+     time:TemporalEntity
+    </a>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#TemporalPrecision">
+      Temporal Precision
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="threatPerdurant">threat perdurant<a class="headerlink" href="#threatPerdurant" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#threatPerdurant
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+     Sub Property Of
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty">
+      topObjectProperty
+     </a>
+     <sup class="sup-op" title="OWL Object Property">
+      op
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h3 id="triggers">triggers<a class="headerlink" href="#triggers" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     https://w3id.org/crima-ontology/ccore#triggers
+    </code>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+     Description
+    </a>
+   </th>
+   <td>
+    <ul>
+     <li>
+      <p>
+       A minimal definition based on temporal precedence only (anything about causality yet).
+      </p>
+     </li>
+     <li>
+      <p>
+       triggers(E, E1) --&gt;
+∃ T, T1. ThreatPerdurant(E), ThreatPerdurant(E1),
+time:hasTime(E, T), time:hasTime(E1, T1), 
+time:intervalOverlaps(T, T1) .
+      </p>
+     </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Domain
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+     Range
+    </a>
+   </th>
+   <td>
+    <span>
+     <a href="#ThreatPerdurant">
+      ccore:ThreatPerdurant
+     </a>
+     <sup class="sup-c" title="OWL/RDFS Class">
+      c
+     </sup>
+    </span>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h2 id="annotation-properties">Annotation Properties<a class="headerlink" href="#annotation-properties" title="Permanent link">&para;</a></h2>
+<h3 id="references">references<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<div class="pylode">
+ <table>
+  <tr>
+   <th>
+    IRI
+   </th>
+   <td>
+    <code>
+     http://purl.org/dc/terms/references
+    </code>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<h2 id="namespaces">Namespaces<a class="headerlink" href="#namespaces" title="Permanent link">&para;</a></h2>
+<div class="pylode">
+ <dl>
+  <dt id="ccore">
+   ccore
+  </dt>
+  <dd>
+   <code>
+    https://w3id.org/crima-ontology/ccore#
+   </code>
+  </dd>
+  <dt id="ctlo">
+   ctlo
+  </dt>
+  <dd>
+   <code>
+    https://w3id.org/crima-ontology/ctlo#
+   </code>
+  </dd>
+  <dt id="dcterms">
+   dcterms
+  </dt>
+  <dd>
+   <code>
+    http://purl.org/dc/terms/
+   </code>
+  </dd>
+  <dt id="dpo">
+   dpo
+  </dt>
+  <dd>
+   <code>
+    http://knowwheregraph/ontology/dpo#
+   </code>
+  </dd>
+  <dt id="geo">
+   geo
+  </dt>
+  <dd>
+   <code>
+    http://www.opengis.net/ont/geosparql#
+   </code>
+  </dd>
+  <dt id="owl">
+   owl
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/2002/07/owl#
+   </code>
+  </dd>
+  <dt id="rdf">
+   rdf
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/1999/02/22-rdf-syntax-ns#
+   </code>
+  </dd>
+  <dt id="rdfs">
+   rdfs
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/2000/01/rdf-schema#
+   </code>
+  </dd>
+  <dt id="skos">
+   skos
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/2004/02/skos/core#
+   </code>
+  </dd>
+  <dt id="sosa">
+   sosa
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/ns/sosa/
+   </code>
+  </dd>
+  <dt id="sosa-obs">
+   sosa-obs
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/ns/sosa/obs/
+   </code>
+  </dd>
+  <dt id="swrl">
+   swrl
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/2003/11/swrl#
+   </code>
+  </dd>
+  <dt id="swrl-var">
+   swrl-var
+  </dt>
+  <dd>
+   <code>
+    urn:swrl:var#
+   </code>
+  </dd>
+  <dt id="time">
+   time
+  </dt>
+  <dd>
+   <code>
+    http://www.w3.org/2006/time#
+   </code>
+  </dd>
+  <dt id="vann">
+   vann
+  </dt>
+  <dd>
+   <code>
+    http://purl.org/vocab/vann/
+   </code>
+  </dd>
+  <dt id="voaf">
+   voaf
+  </dt>
+  <dd>
+   <code>
+    http://purl.org/vocommons/voaf#
+   </code>
+  </dd>
+ </dl>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 - the CRIMA ontology authors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/crima-ontology/ontology" target="_blank" rel="noopener" title="CRIMA ontology on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

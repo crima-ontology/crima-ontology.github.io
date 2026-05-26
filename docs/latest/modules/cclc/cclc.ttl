@@ -1,0 +1,55 @@
+@prefix cclc: <https://w3id.org/crima-ontology/cclc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+cclc: a owl:Ontology ;
+    vann:preferredNamespacePrefix "cclc" ;
+    vann:preferredNamespaceUri "https://w3id.org/crima-ontology/cclc#"^^xsd:anyURI ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+cclc:CORINE-Class_level1 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom cclc:CORINE-classification ;
+            owl:onProperty skos:inScheme ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom cclc:CORINE-Class_level2 ;
+            owl:onProperty skos:narrower ],
+        skos:Concept .
+
+cclc:CORINE-Class_level3 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom cclc:CORINE-classification ;
+            owl:onProperty skos:inScheme ],
+        skos:Concept .
+
+cclc:CorineValue a rdfs:Datatype ;
+    rdfs:label "CORINE value"@en ;
+    rdfs:comment "A numerical value from the CORINE Land Cover nomenclature" .
+
+skos:ConceptScheme a owl:Class .
+
+skos:narrower a owl:ObjectProperty .
+
+cclc:CORINE-Class_level2 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom cclc:CORINE-classification ;
+            owl:onProperty skos:inScheme ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom cclc:CORINE-Class_level2 ;
+            owl:onProperty skos:narrower ],
+        skos:Concept .
+
+skos:Concept a owl:Class .
+
+skos:inScheme a owl:ObjectProperty .
+
+cclc:CORINE-classification a owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme .
+

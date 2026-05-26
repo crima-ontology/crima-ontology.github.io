@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:voaf="http://purl.org/vocommons/voaf#"
+>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Megagrams of Methane per year</rdfs:label>
+    <rdfs:label>Megagrams of Methane per year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature">
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <rdfs:label xml:lang="en">maximum ambient temperature</rdfs:label>
+    <skos:definition xml:lang="en">The maximum ambient temperature in the environment.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/crima-ontology/cquak#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Megagrams of carbon dioxide equivalent per year</rdfs:label>
+    <rdfs:label>Megagrams of carbon dioxide equivalent per year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cquak#MinAmbientTemperature">
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <rdfs:label xml:lang="en">minimum ambient temperature</rdfs:label>
+    <skos:definition xml:lang="en">The minimum ambient temperature in the environment.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/crima-ontology/cquak#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature">
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <rdfs:label xml:lang="en">mean ambient temperature</rdfs:label>
+    <skos:definition xml:lang="en">The average value is derived from a set of air temperature measurements that were recorded over a specific time period. </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/crima-ontology/cquak#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label>Number of species per unit volume or area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label>Number of traits per unit volume or area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <skos:notation>Strokes per km2 y-1</skos:notation>
+    <rdfs:isDefinedBy>GCOS-245 "The 2022 GCOS ECVs Requirements"
+2022 edition - Updated in 2025</rdfs:isDefinedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label>Number of molecular biology groups per unit volume or area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions</rdfs:label>
+    <rdfs:label>Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://codes.wmo.int/wmdr/unit/"/>
+    <owl:imports rdf:resource="http://qudt.org/schema/qudt"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <vann:preferredNamespacePrefix>cunit</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/crima-ontology/cunit#</vann:preferredNamespaceUri>
+    <voaf:generalizes rdf:resource="http://codes.wmo.int/wmdr/unit/"/>
+    <voaf:generalizes rdf:resource="http://qudt.org/schema/qudt"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocab/vann/"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocommons/voaf"/>
+    <voaf:metadataVoc rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label>Molecules per square centimeter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Cubic gigametre per year</rdfs:label>
+    <rdfs:label>Cubic gigametre per year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Megagrams of nitrous oxide per year</rdfs:label>
+    <rdfs:label>Megagrams of nitrous oxide per year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Cubic Kilometers per Year</rdfs:label>
+    <rdfs:label>Cubic Kilometers per Year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#Unit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+    <rdfs:label xml:lang="en">Megagrams of Carbon Dioxide per year</rdfs:label>
+    <rdfs:label>Megagrams of Carbon Dioxide per year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://codes.wmo.int/wmdr/unit/Unit">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#generalizes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

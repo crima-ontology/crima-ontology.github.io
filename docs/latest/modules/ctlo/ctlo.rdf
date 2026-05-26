@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:voaf="http://purl.org/vocommons/voaf#"
+>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#constantPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"/>
+    <rdfs:range rdf:resource="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"/>
+    <rdfs:comment>Borrowed from DOLCE ontology as: "ConstantPartOf is the constant version of Temporary Parthood which is a ternary relation between two endurants x, y and a time interval t. The intended interpretation is that the endurant x is a part of the endurant y over the time interval t. In this constant version, the endurant x is part of the endurant y during the whole existence of y."</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#locationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#Quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <vann:preferredNamespacePrefix>ctlo</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/crima-ontology/ctlo#</vann:preferredNamespaceUri>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocab/vann/"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocommons/voaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#locatedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/crima-ontology/ctlo#locationOf"/>
+    <rdfs:comment>The primitive instance-level relation c locatedIn r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is partOf the spatial region occupied by c1. Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus.</rdfs:comment>
+    <rdfs:isDefinedBy>https://github.com/BFO-ontology/BFO/blob/master/ro.owl</rdfs:isDefinedBy>
+    <rdfs:seeAlso>https://github.com/BFO-ontology/BFO/blob/master/docs/Mungall_RO_2012.pptx</rdfs:seeAlso>
+    <rdfs:seeAlso>https://obofoundry.org/ontology/ro.html</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#metadataVoc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ctlo#Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

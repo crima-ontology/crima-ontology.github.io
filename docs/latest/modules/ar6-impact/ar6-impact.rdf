@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:voaf="http://purl.org/vocommons/voaf#"
+>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#FloodStormDamagesInCoastalAreas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#TerrestrialEcosystemPhenologyChanges">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#DamagesToKeyEconomicInfrastructures">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#WaterScarcity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#OceanSpeciesShift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="https://w3id.org/crima-ontology/cclc#"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <vann:preferredNamespacePrefix>ar6-impact</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/crima-ontology/ar6-impact#</vann:preferredNamespaceUri>
+    <voaf:extends rdf:resource="https://w3id.org/crima-ontology/cclc#"/>
+    <voaf:extends rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocab/vann/"/>
+    <voaf:metadataVoc rdf:resource="http://purl.org/vocommons/voaf"/>
+    <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#Impact-type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#OceanEcosystemPhenologyChanges">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#Displacement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ImpactOnWaterScarcityAndFoodProduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb1"/>
+    <rdfs:subClassOf rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#AnimalAndLivestockHealthAndProductivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ImpactOnHealthAndWellbeing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ImpactOnCitiesSettlementsInfrastructures">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb3"/>
+    <rdfs:subClassOf rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#FreshwaterEcosystemPhenologyChanges">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ChangesInEcosystemStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#DamagesToInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ChangesInTerrestrialEcosystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#observed-impacts-list">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#HealthMalnutritionAndOther">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#SpeciesRangeShift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#AgriCropProduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ChangesInFreshwaterEcosystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#ChangesInOceanEcosystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#InfectiousDiseases">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#PhenologyChanges">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"/>
+    <skos:broader rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#metadataVoc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#MentalHealth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#InlandFoodingAndAssociatedDamages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#TerrestrialSpeciesShift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#FisheriesAndAquacultureProduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ar6-impact#FreshwaterSpeciesShift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n7ba3bb95c40d44aa82458d6e6f18b8deb2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#extends">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

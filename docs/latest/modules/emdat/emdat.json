@@ -1,0 +1,355 @@
+[
+  {
+    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "https://council.science/wp-content/uploads/2019/12/Peril-Classification-and-Hazard-Glossary-1.pdf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "Integrated Research on Disaster Risk. (2014). Peril Classification and Hazard Glossary (IRDR DATA Publication No. 1). Beijing: Integrated Research on Disaster Risk."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#hasSubtype",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Links a record-level EM-DAT classification to its leaf subtype concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#emdat-subtype"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-disasters-classification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The main classification tree has four levels of depth, so disasters are divided into groups, subgroups, types, and subtypes, as presented in the EM-DAT Public Table columns. The two EM-DAT disaster groups are 'Natural' and 'Technological'. The table below shows the complete tree for the 'Natural' and 'Technological' groups, with the occurrence for each subtype. Their corresponding definitions are available in the Classification Glossary."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "https://doc.emdat.be/docs/data-structure-and-content/disaster-classification-system/"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#metadataVoc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-classificationEntry",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A record-level EM-DAT classification identified by classification_key, corresponding to one full classification path in the source table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-subtype",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b4"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b5"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#emdat-type"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#CascadingEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-subgroup",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b2"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b3"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#emdat-group"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "emdat"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/crima-ontology/emdat#"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#extends": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#metadataVoc": [
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      },
+      {
+        "@id": "http://purl.org/vocommons/voaf"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#specializes": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#Hazard",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-group",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b1"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#specializes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#broader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/emdat#emdat-type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b6"
+      },
+      {
+        "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b7"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#emdat-subgroup"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n0458ac64dc1d4b20a6e9a5912eaa8989b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/emdat#EMDAT-DisastersClassification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  }
+]

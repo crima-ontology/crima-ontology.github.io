@@ -1,0 +1,351 @@
+[
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Megagrams of nitrous oxide per year"
+      },
+      {
+        "@value": "Megagrams of nitrous oxide per year"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cubic Kilometers per Year"
+      },
+      {
+        "@value": "Cubic Kilometers per Year"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cquak#MinAmbientTemperature",
+    "@type": [
+      "http://qudt.org/schema/qudt/QuantityKind"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cquak#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "minimum ambient temperature"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "The minimum ambient temperature in the environment."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "GCOS-245 \"The 2022 GCOS ECVs Requirements\"\n2022 edition - Updated in 2025"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "Strokes per km2 y-1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature",
+    "@type": [
+      "http://qudt.org/schema/qudt/QuantityKind"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cquak#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "maximum ambient temperature"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "The maximum ambient temperature in the environment."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Number of traits per unit volume or area"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "cunit"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/crima-ontology/cunit#"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#generalizes": [
+      {
+        "@id": "http://codes.wmo.int/wmdr/unit/"
+      },
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#metadataVoc": [
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      },
+      {
+        "@id": "http://purl.org/vocommons/voaf"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#specializes": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://codes.wmo.int/wmdr/unit/"
+      },
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Number of molecular biology groups per unit volume or area"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions"
+      },
+      {
+        "@value": "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions"
+      }
+    ]
+  },
+  {
+    "@id": "http://codes.wmo.int/wmdr/unit/Unit",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#Unit"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Number of species per unit volume or area"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Megagrams of Methane per year"
+      },
+      {
+        "@value": "Megagrams of Methane per year"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature",
+    "@type": [
+      "http://qudt.org/schema/qudt/QuantityKind"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cquak#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "mean ambient temperature"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "The average value is derived from a set of air temperature measurements that were recorded over a specific time period. "
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Megagrams of Carbon Dioxide per year"
+      },
+      {
+        "@value": "Megagrams of Carbon Dioxide per year"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#Unit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#generalizes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Megagrams of carbon dioxide equivalent per year"
+      },
+      {
+        "@value": "Megagrams of carbon dioxide equivalent per year"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Unit",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#Unit"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#specializes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Molecules per square centimeter"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/cunit#Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cubic gigametre per year"
+      },
+      {
+        "@value": "Cubic gigametre per year"
+      }
+    ]
+  }
+]

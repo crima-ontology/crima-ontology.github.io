@@ -1,0 +1,322 @@
+[
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#Feature"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb7"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb8"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "ecv"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/crima-ontology/ecv#"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#extends": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      },
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#metadataVoc": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      },
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      },
+      {
+        "@id": "http://purl.org/vocommons/voaf"
+      }
+    ],
+    "http://purl.org/vocommons/voaf#specializes": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/common/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      },
+      {
+        "@id": "http://www.opengis.net/ont/geosparql"
+      },
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/common/"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Property"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb2"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb3"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb4"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasUnit"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#Unit"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#isProductOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#isProductOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/isPropertyOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-domain",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb1"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "World Meteorological Organization (WMO); Intergovernmental Oceanographic Commission of the United Nations Educational, Scientific and Cultural Organization (IOC-UNESCO); International Science Council (ISC); United Nations Environment Programme (UNEP); Copernicus Climate Change Service (C3S)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@value": "https://library.wmo.int/records/item/58111-the-2022-gcos-ecvs-requirements?offset=8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An Essential Climate Variable (ECV) is a physical, chemical or biological variable or a group of linked variables that critically contributes to the characterization of Earth's climate. GCOS currently specifies 55 ECVs. ECV datasets provide the empirical evidence needed to understand and predict the evolution of climate, to guide mitigation and adaptation measures, to assess risks and enable attribution of climate events to underlying causes, and to underpin climate services. They are required to support the work of the UNFCCC and the IPCC."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "GCOS-245 \"The 2022 GCOS ECVs Requirements\"\n2022 edition - Updated in 2025"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb5"
+      },
+      {
+        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb6"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-domain"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  }
+]
