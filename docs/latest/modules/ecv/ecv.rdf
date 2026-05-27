@@ -7,6 +7,14 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:voaf="http://purl.org/vocommons/voaf#"
 >
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Property"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b2"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b3"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b4"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <owl:imports rdf:resource="http://qudt.org/schema/qudt"/>
@@ -26,42 +34,32 @@
     <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <voaf:specializes rdf:resource="http://www.w3.org/ns/sosa/common/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-domain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb1"/>
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/crima-ontology/ecv#isProductOf"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#isProductOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/isPropertyOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-variable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb7"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb8"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
-    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-product">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Property"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb2"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb3"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-subdomain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb5"/>
-    <rdfs:subClassOf rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb6"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b7"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b8"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -72,39 +70,41 @@
     <rdfs:isDefinedBy>GCOS-245 "The 2022 GCOS ECVs Requirements"
 2022 edition - Updated in 2025</rdfs:isDefinedBy>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb5">
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-domain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-subdomain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b5"/>
+    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b5">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-domain"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#isProductOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/isPropertyOf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb7">
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b7">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-subdomain"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb6">
+  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b8">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n93511fbeb3d34218ab8a05f763e764ccb3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/crima-ontology/ecv#isProductOf"/>
-    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-variable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>

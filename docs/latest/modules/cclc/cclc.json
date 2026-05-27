@@ -1,12 +1,31 @@
 [
   {
-    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-classification",
+    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level3",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n8529e788a22941e58a35afd5849d4c5cb5"
+      }
+    ]
+  },
+  {
+    "@id": "_:n8529e788a22941e58a35afd5849d4c5cb5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cclc#CORINE-classification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
       }
     ]
   },
@@ -17,31 +36,7 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level3",
+    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -50,12 +45,15 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:n5992b4edc6e94a258d74c7016538ec33b5"
+        "@id": "_:n8529e788a22941e58a35afd5849d4c5cb1"
+      },
+      {
+        "@id": "_:n8529e788a22941e58a35afd5849d4c5cb2"
       }
     ]
   },
   {
-    "@id": "_:n5992b4edc6e94a258d74c7016538ec33b5",
+    "@id": "_:n8529e788a22941e58a35afd5849d4c5cb1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -71,40 +69,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level2",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      },
-      {
-        "@id": "_:n5992b4edc6e94a258d74c7016538ec33b3"
-      },
-      {
-        "@id": "_:n5992b4edc6e94a258d74c7016538ec33b4"
-      }
-    ]
-  },
-  {
-    "@id": "_:n5992b4edc6e94a258d74c7016538ec33b3",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/cclc#CORINE-classification"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
-      }
-    ]
-  },
-  {
-    "@id": "_:n5992b4edc6e94a258d74c7016538ec33b4",
+    "@id": "_:n8529e788a22941e58a35afd5849d4c5cb2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -120,13 +85,47 @@
     ]
   },
   {
+    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-classification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
     "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level1",
+    "@id": "https://w3id.org/crima-ontology/cclc#CorineValue",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A numerical value from the CORINE Land Cover nomenclature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "CORINE value"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cclc#CORINE-Class_level2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -135,15 +134,15 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:n5992b4edc6e94a258d74c7016538ec33b1"
+        "@id": "_:n8529e788a22941e58a35afd5849d4c5cb3"
       },
       {
-        "@id": "_:n5992b4edc6e94a258d74c7016538ec33b2"
+        "@id": "_:n8529e788a22941e58a35afd5849d4c5cb4"
       }
     ]
   },
   {
-    "@id": "_:n5992b4edc6e94a258d74c7016538ec33b1",
+    "@id": "_:n8529e788a22941e58a35afd5849d4c5cb3",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -159,7 +158,7 @@
     ]
   },
   {
-    "@id": "_:n5992b4edc6e94a258d74c7016538ec33b2",
+    "@id": "_:n8529e788a22941e58a35afd5849d4c5cb4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -197,20 +196,21 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/cclc#CorineValue",
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A numerical value from the CORINE Land Cover nomenclature"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "CORINE value"
-      }
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
     ]
   }
 ]

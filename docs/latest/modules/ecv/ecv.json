@@ -1,45 +1,67 @@
 [
   {
-    "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable",
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-product",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.opengis.net/ont/geosparql#Feature"
-      },
-      {
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+        "@id": "http://www.w3.org/ns/sosa/Property"
       },
       {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb7"
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b2"
       },
       {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb8"
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b3"
+      },
+      {
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b4"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb7",
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain"
-      }
-    ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+        "@id": "http://qudt.org/schema/qudt/hasUnit"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/cunit#Unit"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb8",
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#isProductOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable"
+      }
+    ]
+  },
+  {
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -122,7 +144,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ecv#ECV-product",
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -131,53 +153,86 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "http://www.w3.org/ns/sosa/Property"
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b5"
       },
       {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb2"
-      },
-      {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb3"
-      },
-      {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb4"
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b6"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb2",
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b5",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "http://qudt.org/schema/qudt/hasUnit"
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-domain"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://w3id.org/crima-ontology/cunit#Unit"
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb3",
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b6",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "https://w3id.org/crima-ontology/ecv#isProductOf"
+        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable"
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb4",
+    "@id": "https://w3id.org/crima-ontology/ecv#ECV-variable",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#Feature"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+      },
+      {
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b7"
+      },
+      {
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b8"
+      }
+    ]
+  },
+  {
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b8",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -213,12 +268,12 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb1"
+        "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b1"
       }
     ]
   },
   {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb1",
+    "@id": "_:nb62f1f7c91174de08be03c4e2fcb9149b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -262,61 +317,6 @@
       {
         "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ecv#ECV-subdomain",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      },
-      {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb5"
-      },
-      {
-        "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb6"
-      }
-    ]
-  },
-  {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ecv#ECV-domain"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#broader"
-      }
-    ]
-  },
-  {
-    "@id": "_:n93511fbeb3d34218ab8a05f763e764ccb6",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   }
 ]

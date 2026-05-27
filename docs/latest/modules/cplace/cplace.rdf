@@ -8,33 +8,6 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:voaf="http://purl.org/vocommons/voaf#"
 >
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#WeatherStation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdfs:isDefinedBy>https://en.wikipedia.org/wiki/Weather_station</rdfs:isDefinedBy>
-    <rdfs:seeAlso>Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.
-https://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf</rdfs:seeAlso>
-    <skos:definition>A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/ontology/Place">
-    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#DrainageBasin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/NaturalPlace"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HealthDistrict">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/District"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#RoadNetwork">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Infrastructure"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
@@ -51,16 +24,43 @@ https://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf</rdfs:seeAlso>
     <voaf:specializes rdf:resource="https://w3id.org/crima-ontology/ctlo#"/>
     <voaf:specializes rdf:resource="http://www.w3.org/ns/sosa/common/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/ontology/ArchitecturalStructure">
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Place">
     <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#DrainageBasin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/NaturalPlace"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/activitystreams#latitude">
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#WeatherStation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <rdfs:isDefinedBy>https://en.wikipedia.org/wiki/Weather_station</rdfs:isDefinedBy>
+    <rdfs:seeAlso>Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.
+https://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf</rdfs:seeAlso>
+    <skos:definition>A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/activitystreams#longitude">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasSerialization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HydrologicalStation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <rdfs:isDefinedBy>International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3.</rdfs:isDefinedBy>
+    <skos:definition>Hydrological station established for the observation of a specific element or elements in order to investigate hydrological events. (TR)</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HealthRegion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
+    <rdfs:comment>The sum of multiple contingous health districts (tentative).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#RoadNetwork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Infrastructure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#Watercourse">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -71,30 +71,30 @@ https://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf</rdfs:seeAlso>
     <rdfs:seeAlso>International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3.</rdfs:seeAlso>
     <rdfs:seeAlso>http://purl.obolibrary.org/obo/ENVO_00000029 </rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/activitystreams#longitude">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasSerialization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HealthRegion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
-    <rdfs:comment>The sum of multiple contingous health districts (tentative).</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HydrologicalStation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdfs:isDefinedBy>International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3.</rdfs:isDefinedBy>
-    <skos:definition>Hydrological station established for the observation of a specific element or elements in order to investigate hydrological events. (TR)</skos:definition>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#CommunityDistrict">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/District"/>
     <rdfs:comment>es. BURGRAVIATO, VALVENOSTA, BASSAATESINA,...</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+  <rdf:Description rdf:about="https://www.w3.org/ns/activitystreams#latitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasSerialization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cplace#HealthDistrict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/District"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/ArchitecturalStructure">
     <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocommons/voaf#extends">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>

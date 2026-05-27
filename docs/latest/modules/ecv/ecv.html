@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://crima-ontology.github.io/modules/ecv/ecv.html">
+        <link rel="canonical" href="https://crima-ontology.github.io/latest/modules/ecv/ecv.html">
       
       
         <link rel="prev" href="../cclc/cclc.html">
@@ -851,34 +851,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#annotation-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annotation Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Annotation Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        creator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#namespaces" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1305,34 +1277,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#annotation-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annotation Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Annotation Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        creator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#namespaces" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1577,6 +1521,18 @@
     </span>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ecv_ECV-domain["&lt;b&gt;ecv:ECV-domain&lt;/b&gt;"]
+    click ecv_ECV-domain href "https://w3id.org/crima-ontology/ecv#ECV-domain"
+    skos_Concept["skos:Concept"]
+    click skos_Concept href "http://www.w3.org/2004/02/skos/core#Concept"
+    ecv_ECV-domain --&gt;|rdfs:subClassOf| skos_Concept</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -1715,6 +1671,21 @@
     </ul>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ecv_ECV-product["&lt;b&gt;ecv:ECV-product&lt;/b&gt;"]
+    click ecv_ECV-product href "https://w3id.org/crima-ontology/ecv#ECV-product"
+    skos_Concept["skos:Concept"]
+    click skos_Concept href "http://www.w3.org/2004/02/skos/core#Concept"
+    sosa_Property["sosa:Property"]
+    click sosa_Property href "http://www.w3.org/ns/sosa/Property"
+    ecv_ECV-product --&gt;|rdfs:subClassOf| skos_Concept
+    ecv_ECV-product --&gt;|rdfs:subClassOf| sosa_Property</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -1817,6 +1788,18 @@
       </span>
      </li>
     </ul>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ecv_ECV-subdomain["&lt;b&gt;ecv:ECV-subdomain&lt;/b&gt;"]
+    click ecv_ECV-subdomain href "https://w3id.org/crima-ontology/ecv#ECV-subdomain"
+    skos_Concept["skos:Concept"]
+    click skos_Concept href "http://www.w3.org/2004/02/skos/core#Concept"
+    ecv_ECV-subdomain --&gt;|rdfs:subClassOf| skos_Concept</code></pre>
    </td>
   </tr>
  </table>
@@ -1937,6 +1920,24 @@
     </ul>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ecv_ECV-variable["&lt;b&gt;ecv:ECV-variable&lt;/b&gt;"]
+    click ecv_ECV-variable href "https://w3id.org/crima-ontology/ecv#ECV-variable"
+    geo_Feature["geo:Feature"]
+    click geo_Feature href "http://www.opengis.net/ont/geosparql#Feature"
+    skos_Concept["skos:Concept"]
+    click skos_Concept href "http://www.w3.org/2004/02/skos/core#Concept"
+    sosa_FeatureOfInterest["sosa:FeatureOfInterest"]
+    click sosa_FeatureOfInterest href "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    ecv_ECV-variable --&gt;|rdfs:subClassOf| geo_Feature
+    ecv_ECV-variable --&gt;|rdfs:subClassOf| skos_Concept
+    ecv_ECV-variable --&gt;|rdfs:subClassOf| sosa_FeatureOfInterest</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -2007,6 +2008,18 @@
     </span>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ecv_EssentialClimaticVariables["&lt;b&gt;ecv:EssentialClimaticVariables&lt;/b&gt;"]
+    click ecv_EssentialClimaticVariables href "https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"
+    skos_ConceptScheme["skos:ConceptScheme"]
+    click skos_ConceptScheme href "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ecv_EssentialClimaticVariables --&gt;|rdfs:subClassOf| skos_ConceptScheme</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -2034,23 +2047,6 @@
     <a href="http://www.w3.org/ns/sosa/isPropertyOf">
      sosa:isPropertyOf
     </a>
-   </td>
-  </tr>
- </table>
-</div>
-
-<h2 id="annotation-properties">Annotation Properties<a class="headerlink" href="#annotation-properties" title="Permanent link">&para;</a></h2>
-<h3 id="creator">creator<a class="headerlink" href="#creator" title="Permanent link">&para;</a></h3>
-<div class="pylode">
- <table>
-  <tr>
-   <th>
-    IRI
-   </th>
-   <td>
-    <code>
-     http://purl.org/dc/terms/creator
-    </code>
    </td>
   </tr>
  </table>

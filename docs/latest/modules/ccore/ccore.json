@@ -1,119 +1,12 @@
 [
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#exposedTo",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#AdaptationOption",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/terms/source": [
-      {
-        "@value": "IPCC, 2021: Annex VII: Glossary [Matthews, J.B.R., V. Möller, R. van Diemen, J.S. Fuglestvedt, V. Masson-Delmotte, C. Méndez, S. Semenov, A. Reisinger (eds.)]. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 2215-2256, doi:10.1017/9781009157896.022."
-      },
-      {
-        "@value": "Noble, I.R., S. Huq, Y.A. Anokhin, J. Carmin, D. Goudou, F.P. Lansigan, B. Osman-Elasha, and A. Villamizar, 2014: Adaptation needs and options. In: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part A: Global and Sectoral Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change[Field, C.B., V.R. Barros, D.J. Dokken, K.J. Mach, M.D. Mastrandrea, T.E. Bilir, M. Chatterjee, K.L. Ebi, Y.O. Estrada, R.C. Genova, B. Girma, E.S. Kissel, A.N. Levy, S. MacCracken, P.R. Mastrandrea, and L.L. White (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 833-868."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "In human systems, the process of adjustment to actual or expected climate and its effects, in order to moderate harm or exploit beneficial opportunities. In natural systems, the process of adjustment to actual climate and its effects; human intervention may facilitate adjustment to expected climate and its effects. See also Adaptation options, Adaptive capacity and Maladaptive actions (Maladaptation)."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#TemporalPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A classification of the granularity at which a temporal value is known."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Temporal Precision"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#ExtrinsicVulnerability",
+    "@id": "https://w3id.org/crima-ontology/ccore#UnintensionallyProvided",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#MonthPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "month precision"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#CascadingEvent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "CascadingEvent(E) --> ∃ E1 ThreatPerdurant(E), triggers(E1, E) ."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb29"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb29",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb30"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb30",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#triggers"
+        "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
       }
     ]
   },
@@ -142,34 +35,880 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#Commitment-based",
+    "@id": "https://w3id.org/crima-ontology/ccore#ClimaticImpactDriver",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/dc/terms/references": [
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@value": "Adamo, G., & Willis, M. (2022, May). Conceptual integration for social-ecological systems: An ontological approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "CommitmentBasedService"
+        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b31"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Climatic impact-driver (CID) Climatic impact-drivers (CIDs) are physical climate system conditions (e.g., means, events, extremes) that affect an element of society or ecosystems. Depending on system tolerance, CIDs and their changes can be detrimental, beneficial, neutral or a mixture of each across interacting system elements and regions. See also Risk, Hazard and Impacts (consequences, outcomes)."
       }
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#MeteorologicalObservation",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#Event"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#Process"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#ElementAtRisk",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ElementAtRisk(O) -->\n∃ I, P. impactsOn(I, O), dpo:resultOf(I, P),\nthreatPerdurant(O, P) ."
+      },
+      {
+        "@value": "We say that an element is 'at risk' with respect to a certain threat perdurant if it is a service or a physical endurant for which an impact has been documented that results from the same threat perdurant and impacts on that element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b34"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b35"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#threatPerdurant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b35",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b36"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b37"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b36",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Impact"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://knowwheregraph/ontology/dpo#resultOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#Impact",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Impact(I) -->\n∃ O, Exp, V, P, G. (PhysicalEndurant(O) ∨ EcosystemService(O)), Exposure(Exp), Vulnerability(V), ThreatPerdurant(P), Goal(G)\ninheresIn(V, O), manifestedBy(V, P), refersTo(V, G),\nexposedElement(Exp, O), exposedTo(Exp, P),\nintendedGoal(O, G),\nimpactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo:resultOf(I, P) ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b49"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b59"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b71"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b72"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b76"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "The consequences of realized risks on natural and human systems, where risks result from the interactions of climate-related hazards (including extreme weather/climate events), exposure, and vulnerability. Impacts generally refer to effects on lives, livelihoods, health and well-being, ecosystems and species, economic, social and cultural assets, services (including ecosystem services), and infrastructure. Impacts may be referred to as consequences or outcomes and can be adverse or beneficial. See also Adaptation, Exposure, Hazard, Vulnerability and Risk."
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b49",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://knowwheregraph/ontology/dpo#dependsOn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b50"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b50",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b51"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b51",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#exposedElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b52"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b52",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b55",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#exposedTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b59",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://knowwheregraph/ontology/dpo#dependsOn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b60"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b61"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b65"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b61",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#inheresIn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b62"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b62",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b65",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#manifestedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b66",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#refersTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b71",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://knowwheregraph/ontology/dpo#resultOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b72",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b73"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b73",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b76",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#refersTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b77"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b77",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Goal"
+          },
+          {
+            "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b78",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#intendedGoal"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b79"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b79",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#hasVulnerability",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#inheresIn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#Exposure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "Exposure(Exp) -->\n∃ O, P. participantOf(O, P), exposedElement(Exp, O), exposedTo(Exp, P) ."
+      },
+      {
+        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b41"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b45"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "The presence of people; livelihoods; species or ecosystems; environmental functions, services, and resources; infrastructure; or economic, social, or cultural assets in places and settings that could be adversely affected."
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b41",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#exposedElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b42"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b42",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b45",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#exposedTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#AdaptationOption",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@value": "IPCC, 2021: Annex VII: Glossary [Matthews, J.B.R., V. Möller, R. van Diemen, J.S. Fuglestvedt, V. Masson-Delmotte, C. Méndez, S. Semenov, A. Reisinger (eds.)]. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 2215-2256, doi:10.1017/9781009157896.022."
+      },
+      {
+        "@value": "Noble, I.R., S. Huq, Y.A. Anokhin, J. Carmin, D. Goudou, F.P. Lansigan, B. Osman-Elasha, and A. Villamizar, 2014: Adaptation needs and options. In: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part A: Global and Sectoral Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change[Field, C.B., V.R. Barros, D.J. Dokken, K.J. Mach, M.D. Mastrandrea, T.E. Bilir, M. Chatterjee, K.L. Ebi, Y.O. Estrada, R.C. Genova, B. Girma, E.S. Kissel, A.N. Levy, S. MacCracken, P.R. Mastrandrea, and L.L. White (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 833-868."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "In human systems, the process of adjustment to actual or expected climate and its effects, in order to moderate harm or exploit beneficial opportunities. In natural systems, the process of adjustment to actual climate and its effects; human intervention may facilitate adjustment to expected climate and its effects. See also Adaptation options, Adaptive capacity and Maladaptive actions (Maladaptation)."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#Hazard",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Hazard(E) --> ∀ E1 ¬triggers(E1, E) ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b46"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "The potential occurrence of a natural or human-induced physical event or trend that may cause loss of life, injury, or other health impacts, as well as damage and loss to property, infrastructure, livelihoods, service provision, ecosystems and environmental resources. See also Impacts (consequences, outcomes) and Risk."
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b46",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b48"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b47"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b47",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#triggers"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b48",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#complementOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#impactsOn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b7"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#refersTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b26"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b26",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Impact"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sosa/Property",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/ns/sosa/Observation"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b84"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b84",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#Event"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#Process"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#Goal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "\"Things do not just have value, they have value for someone, and in case their aﬀordances enable certain happenings that positively contribute to the achievement of one's goals. Analogously, things are only at risk from one's perspective, in case their vulnerabilities enable happenings that hurt one's goals.\"\nSales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., & Mylopoulos, J. (2018, September). The common ontology of value and risk. In International conference on conceptual modeling (pp. 121-135). Cham: Springer International Publishing."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#TemporalPrecision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A classification of the granularity at which a temporal value is known."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Temporal Precision"
+      }
+    ]
+  },
+  {
+    "@id": "urn:swrl:var#i",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#Variable"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#YearPrecision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "year precision"
+      }
+    ]
+  },
+  {
+    "@id": "http://knowwheregraph/ontology/dpo#determinesImpact",
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#MonthPrecision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "month precision"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#ExactPrecision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates that the temporal value is known exactly at its stated resolution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "exact precision"
       }
     ]
   },
@@ -177,6 +916,45 @@
     "@id": "urn:swrl:var#o",
     "@type": [
       "http://www.w3.org/2003/11/swrl#Variable"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#participantOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "participantOf(E, P) --> \n∃ G, G1, T, T1. ThreatPerdurant(P),\nhasGeometry(E, G), hasTime(E, T), hasGeometry(P, G1), hasTime(P, T1),\ngeo:sfIntersect(G, G1), time:notDisjoint(T, T1) .\n\nparticipantOf(E, P) --> (EcosystemService(E) ∨ PhysicalEndurant(E)), ThreatPerdurant(P)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b20"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
     ]
   },
   {
@@ -196,164 +974,67 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#impactedBy",
+    "@id": "https://w3id.org/crima-ontology/ccore#temporalPrecision",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#UnintensionallyProvided",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Vulnerability(V) -->\n∃ O, P, Q1, G. PhysicalEndurant(O) ∨ EcosystemService(O), ThreatPerdurant(P), Quality(Q1), Goal(G),\nparticipantOf(O, P), isQualityOf(Q1, O), intendedGoalFor(G, O),\ninheresIn(V, O), proxyContent(V, Q1), manifestedBy(V, P), refersTo(V, G) ."
+        "@language": "en",
+        "@value": "Specifies the granularity or precision with which a temporal entity is known or recorded (e.g., year, month, day, exact)."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb87"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb91"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb92"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb93"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb87",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#inheresIn"
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb88"
+        "@language": "en",
+        "@value": "temporal precision"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb88",
+    "@id": "https://w3id.org/crima-ontology/ccore#exposedTo",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb91",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#manifestedBy"
+        "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb92",
+    "@id": "https://w3id.org/crima-ontology/ccore#reduces",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#proxyContent"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb93",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#refersTo"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
-      }
-    ]
-  },
-  {
-    "@id": "urn:swrl:var#p",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Variable"
-    ]
-  },
-  {
-    "@id": "urn:swrl:var#i",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Variable"
-    ]
-  },
-  {
-    "@id": "http://knowwheregraph/ontology/dpo#determinesImpact",
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb1"
+        "@id": "https://w3id.org/crima-ontology/ccore#AdaptationOption"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b23"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb1",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b23",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -450,34 +1131,36 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#Goal",
+    "@id": "https://w3id.org/crima-ontology/ccore#SecondPrecision",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "\"Things do not just have value, they have value for someone, and in case their aﬀordances enable certain happenings that positively contribute to the achievement of one's goals. Analogously, things are only at risk from one's perspective, in case their vulnerabilities enable happenings that hurt one's goals.\"\nSales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., & Mylopoulos, J. (2018, September). The common ontology of value and risk. In International conference on conceptual modeling (pp. 121-135). Cham: Springer International Publishing."
+        "@language": "en",
+        "@value": "second precision"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#reduces",
+    "@id": "https://w3id.org/crima-ontology/ccore#isQualityOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#AdaptationOption"
+        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb23"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b16"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb23",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b16",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -485,13 +1168,22 @@
       {
         "@list": [
           {
-            "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
           },
           {
-            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
+            "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
           }
         ]
       }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/references",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -507,101 +1199,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#classifies",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#impactsOn",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb7"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#exposedElement",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb4"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#exposedElementOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#hasVulnerability",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#inheresIn"
       }
     ]
   },
@@ -627,120 +1224,219 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b94",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#ElementAtRisk",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2003/11/swrl#Imp"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2003/11/swrl#body": [
       {
-        "@value": "ElementAtRisk(O) -->\n∃ I, P. impactsOn(I, O), dpo:resultOf(I, P),\nthreatPerdurant(O, P) ."
-      },
-      {
-        "@value": "We say that an element is 'at risk' with respect to a certain threat perdurant if it is a service or a physical endurant for which an impact has been documented that results from the same threat perdurant and impacts on that element."
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b95"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2003/11/swrl#head": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb34"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb35"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b101"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb34",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b95",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2003/11/swrl#AtomList"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#threatPerdurant"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b96"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b97"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb35",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b96",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2003/11/swrl#ClassAtom"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2003/11/swrl#argument1": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb36"
+        "@id": "urn:swrl:var#i"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2003/11/swrl#classPredicate": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb37"
+        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb36",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b97",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#AtomList"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b98"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b99"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b98",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl:var#i"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#argument2": [
+      {
+        "@id": "urn:swrl:var#o"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
       {
         "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb37",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b99",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2003/11/swrl#AtomList"
     ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Impact"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb38"
-          }
-        ]
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b100"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@list": []
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb38",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b100",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl:var#i"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#argument2": [
+      {
+        "@id": "urn:swrl:var#p"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
       {
         "@id": "http://knowwheregraph/ontology/dpo#resultOf"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b101",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2003/11/swrl#AtomList"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb84"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b102"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b103"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb84",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b102",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#ClassAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl:var#o"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#classPredicate": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ElementAtRisk"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b103",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#AtomList"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b104"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@list": []
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b104",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl:var#o"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#argument2": [
+      {
+        "@id": "urn:swrl:var#p"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#threatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#exposedElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b4"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#exposedElementOf"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -748,50 +1444,52 @@
       {
         "@list": [
           {
-            "@id": "https://w3id.org/crima-ontology/ctlo#Event"
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
           },
           {
-            "@id": "https://w3id.org/crima-ontology/ctlo#Process"
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
           }
         ]
       }
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#ExactPrecision",
+    "@id": "https://w3id.org/crima-ontology/ccore#DayPrecision",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Indicates that the temporal value is known exactly at its stated resolution."
-      }
-    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "exact precision"
+        "@value": "day precision"
       }
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/sosa/Property",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
-      }
+    "@id": "https://w3id.org/crima-ontology/ccore#proxyContentFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#classifiedBy",
+    "@id": "https://w3id.org/crima-ontology/ccore#hasSpatialExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#classifies"
+        "@value": "The property is meant to be used to represent the spatial scope of any thing as assessed by an agent (e.g. a municipality, a point of interest), not necessarily corresponding to the exact spatial extension of the phenomenon at the geophysical level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#SpatialObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
       }
     ]
   },
@@ -812,225 +1510,35 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#proxyContentFor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#refersTo",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb26"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb26",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Impact"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#SecondPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "second precision"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#Impact",
+    "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Impact(I) -->\n∃ O, Exp, V, P, G. (PhysicalEndurant(O) ∨ EcosystemService(O)), Exposure(Exp), Vulnerability(V), ThreatPerdurant(P), Goal(G)\ninheresIn(V, O), manifestedBy(V, P), refersTo(V, G),\nexposedElement(Exp, O), exposedTo(Exp, P),\nintendedGoal(O, G),\nimpactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo:resultOf(I, P) ."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
+        "@value": "Vulnerability(V) -->\n∃ O, P, Q1, G. PhysicalEndurant(O) ∨ EcosystemService(O), ThreatPerdurant(P), Quality(Q1), Goal(G),\nparticipantOf(O, P), isQualityOf(Q1, O), intendedGoalFor(G, O),\ninheresIn(V, O), proxyContent(V, Q1), manifestedBy(V, P), refersTo(V, G) ."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb49"
+        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
       },
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb59"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b87"
       },
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb71"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b91"
       },
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb72"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b92"
       },
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb76"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "The consequences of realized risks on natural and human systems, where risks result from the interactions of climate-related hazards (including extreme weather/climate events), exposure, and vulnerability. Impacts generally refer to effects on lives, livelihoods, health and well-being, ecosystems and species, economic, social and cultural assets, services (including ecosystem services), and infrastructure. Impacts may be referred to as consequences or outcomes and can be adverse or beneficial. See also Adaptation, Exposure, Hazard, Vulnerability and Risk."
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b93"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb49",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://knowwheregraph/ontology/dpo#dependsOn"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb50"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb50",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Exposure"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb51"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb55"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb51",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#exposedElement"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb52"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb52",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb55",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#exposedTo"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb59",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://knowwheregraph/ontology/dpo#dependsOn"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb60"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb60",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb61"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb65"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb66"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb61",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b87",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1041,12 +1549,12 @@
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb62"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b88"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb62",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b88",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1064,7 +1572,7 @@
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb65",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b91",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1080,7 +1588,23 @@
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb66",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b92",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#proxyContent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b93",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1096,13 +1620,95 @@
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb71",
+    "@id": "https://w3id.org/crima-ontology/ccore#classifiedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#classifies"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#triggers",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A minimal definition based on temporal precedence only (anything about causality yet)."
+      },
+      {
+        "@value": "triggers(E, E1) -->\n∃ T, T1. ThreatPerdurant(E), ThreatPerdurant(E1),\ntime:hasTime(E, T), time:hasTime(E1, T1), \ntime:intervalOverlaps(T, T1) ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#exposedElementOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#ExtrinsicVulnerability",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Vulnerability"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#classifies",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#CascadingEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "CascadingEvent(E) --> ∃ E1 ThreatPerdurant(E), triggers(E1, E) ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+      },
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b29"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b29",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://knowwheregraph/ontology/dpo#resultOf"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b30"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -1112,132 +1718,23 @@
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb72",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b30",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb73"
+        "@id": "https://w3id.org/crima-ontology/ccore#triggers"
       }
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb73",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb76",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#refersTo"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb77"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb77",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#Goal"
-          },
-          {
-            "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb78"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb78",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#intendedGoal"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb79"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb79",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#temporalPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Specifies the granularity or precision with which a temporal entity is known or recorded (e.g., year, month, day, exact)."
-      }
-    ],
+    "@id": "http://knowwheregraph/ontology/dpo#resultOf",
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3.org/2006/time#TemporalEntity"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "temporal precision"
+        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
+        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
       }
     ]
   },
@@ -1253,7 +1750,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb10"
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b10"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -1263,7 +1760,7 @@
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb10",
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1277,6 +1774,51 @@
             "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#intendedGoal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b13"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc2d65b7e13a641feadd1bb36c32d5444b13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
+          },
+          {
+            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ccore#impactedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
       }
     ]
   },
@@ -1311,341 +1853,29 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#isQualityOf",
+    "@id": "urn:swrl:var#p",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb16"
-      }
+      "http://www.w3.org/2003/11/swrl#Variable"
     ]
   },
   {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb16",
+    "@id": "https://w3id.org/crima-ontology/ccore#Commitment-based",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
+    "http://purl.org/dc/terms/references": [
       {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
+        "@value": "Adamo, G., & Willis, M. (2022, May). Conceptual integration for social-ecological systems: An ontological approach. In International Conference on Research Challenges in Information Science (pp. 321-337). Cham: Springer International Publishing."
       }
-    ]
-  },
-  {
-    "@id": "http://knowwheregraph/ontology/dpo#resultOf",
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#intendedGoal",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Goal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb13"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb13",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#participantOf",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "participantOf(E, P) --> \n∃ G, G1, T, T1. ThreatPerdurant(P),\nhasGeometry(E, G), hasTime(E, T), hasGeometry(P, G1), hasTime(P, T1),\ngeo:sfIntersect(G, G1), time:notDisjoint(T, T1) .\n\nparticipantOf(E, P) --> (EcosystemService(E) ∨ PhysicalEndurant(E)), ThreatPerdurant(P)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb20"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb20",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#exposedElementOf",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#YearPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "en",
-        "@value": "year precision"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/references",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb94",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Imp"
-    ],
-    "http://www.w3.org/2003/11/swrl#body": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb95"
+        "@value": "CommitmentBasedService"
       }
     ],
-    "http://www.w3.org/2003/11/swrl#head": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb101"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb95",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb96"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb97"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb96",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#ClassAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl:var#i"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#classPredicate": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#Impact"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb97",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb98"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb99"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb98",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl:var#i"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl:var#o"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#impactsOn"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb99",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb100"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@list": []
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb100",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl:var#i"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl:var#p"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "http://knowwheregraph/ontology/dpo#resultOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb101",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb102"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb103"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb102",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#ClassAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl:var#o"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#classPredicate": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ElementAtRisk"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb103",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb104"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@list": []
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb104",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl:var#o"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl:var#p"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#threatPerdurant"
+        "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
       }
     ]
   },
@@ -1661,243 +1891,13 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ccore#DayPrecision",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ccore#TemporalPrecision"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "day precision"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#hasSpatialExtent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The property is meant to be used to represent the spatial scope of any thing as assessed by an agent (e.g. a municipality, a point of interest), not necessarily corresponding to the exact spatial extension of the phenomenon at the geophysical level."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.opengis.net/ont/geosparql#SpatialObject"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#triggers",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A minimal definition based on temporal precedence only (anything about causality yet)."
-      },
-      {
-        "@value": "triggers(E, E1) -->\n∃ T, T1. ThreatPerdurant(E), ThreatPerdurant(E1),\ntime:hasTime(E, T), time:hasTime(E1, T1), \ntime:intervalOverlaps(T, T1) ."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#ClimaticImpactDriver",
+    "@id": "https://w3id.org/crima-ontology/ccore#MeteorologicalObservation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002"
-      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb31"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Climatic impact-driver (CID) Climatic impact-drivers (CIDs) are physical climate system conditions (e.g., means, events, extremes) that affect an element of society or ecosystems. Depending on system tolerance, CIDs and their changes can be detrimental, beneficial, neutral or a mixture of each across interacting system elements and regions. See also Risk, Hazard and Impacts (consequences, outcomes)."
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb31",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#Event"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#Process"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#Exposure",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "Exposure(Exp) -->\n∃ O, P. participantOf(O, P), exposedElement(Exp, O), exposedTo(Exp, P) ."
-      },
-      {
-        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ctlo#Quality"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb41"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb45"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "The presence of people; livelihoods; species or ecosystems; environmental functions, services, and resources; infrastructure; or economic, social, or cultural assets in places and settings that could be adversely affected."
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb41",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#exposedElement"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb42"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb42",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "https://w3id.org/crima-ontology/ccore#EcosystemService"
-          },
-          {
-            "@id": "https://w3id.org/crima-ontology/ctlo#PhysicalEndurant"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb45",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#exposedTo"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ccore#Hazard",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Hazard(E) --> ∀ E1 ¬triggers(E1, E) ."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "IPCC, 2023: Annex I: Glossary [Reisinger, A., D. Cammarano, A. Fischlin, J.S. Fuglestvedt, G. Hansen, Y. Jung, C. Ludden, V. Masson-Delmotte, R. Matthews, J.B.K Mintenbeck, D.J. Orendain, A. Pirani, E. Poloczanskaa, and J. Romero (eds.)]. In: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland, pp. 119-130, doi: 10.59327/IPCC/AR6-9789291691647.002."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
-      },
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb46"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "The potential occurrence of a natural or human-induced physical event or trend that may cause loss of life, injury, or other health impacts, as well as damage and loss to property, infrastructure, livelihoods, service provision, ecosystems and environmental resources. See also Impacts (consequences, outcomes) and Risk."
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb46",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb48"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb47"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb47",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#triggers"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b039a365d7b4e6784f586ce4a1bb74eb48",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#complementOf": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+        "@id": "http://www.w3.org/ns/sosa/Observation"
       }
     ]
   }

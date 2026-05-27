@@ -1,6 +1,53 @@
 [
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#FloodStormDamagesInCoastalAreas",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#MentalHealth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInTerrestrialEcosystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-type"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#WaterScarcity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#TerrestrialEcosystemPhenologyChanges",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnCitiesSettlementsInfrastructures",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#OceanSpeciesShift",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
@@ -19,6 +66,56 @@
     ]
   },
   {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#TerrestrialSpeciesShift",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb5"
+      }
+    ]
+  },
+  {
+    "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#DamagesToKeyEconomicInfrastructures",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
     "@id": "https://w3id.org/crima-ontology/ar6-impact#Displacement",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
@@ -26,7 +123,14 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#TerrestrialSpeciesShift",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#DamagesToInfrastructure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#FreshwaterSpeciesShift",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
@@ -45,175 +149,20 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInOceanEcosystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      },
-      {
-        "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb3"
-      },
-      {
-        "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb4"
-      }
-    ]
-  },
-  {
-    "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb3",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#broader"
-      }
-    ]
-  },
-  {
-    "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
-      }
     ]
   },
   {
     "@id": "https://w3id.org/crima-ontology/ar6-impact#AgriCropProduction",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#FisheriesAndAquacultureProduction",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#FreshwaterSpeciesShift",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#OceanSpeciesShift",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#SpeciesRangeShift",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocommons/voaf#metadataVoc",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-type"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#MentalHealth",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#InfectiousDiseases",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#DamagesToInfrastructure",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#InlandFoodingAndAssociatedDamages",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHealthAndWellbeing",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInTerrestrialEcosystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#HealthMalnutritionAndOther",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInOceanEcosystem",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
@@ -229,15 +178,15 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb1"
+        "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb1"
       },
       {
-        "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb2"
+        "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb2"
       }
     ]
   },
   {
-    "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb1",
+    "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -253,7 +202,7 @@
     ]
   },
   {
-    "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb2",
+    "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -269,51 +218,79 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-type"
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb3"
+      },
+      {
+        "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb4"
+      }
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#WaterScarcity",
+    "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:n8dcf110e1d194f2d80a41bd1fb8190beb4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#FloodStormDamagesInCoastalAreas",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#AnimalAndLivestockHealthAndProductivity",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#InlandFoodingAndAssociatedDamages",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#InfectiousDiseases",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#metadataVoc",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#observed-impacts-list",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#OceanEcosystemPhenologyChanges",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#DamagesToKeyEconomicInfrastructures",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
@@ -326,6 +303,64 @@
       {
         "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHealthAndWellbeing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#FisheriesAndAquacultureProduction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#FreshwaterEcosystemPhenologyChanges",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInFreshwaterEcosystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#observed-impacts-list",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#AnimalAndLivestockHealthAndProductivity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
@@ -375,83 +410,48 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#FreshwaterEcosystemPhenologyChanges",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
-    ]
-  },
-  {
     "@id": "http://purl.org/vocommons/voaf#specializes",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#TerrestrialEcosystemPhenologyChanges",
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#OceanEcosystemPhenologyChanges",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#Impact-type",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      },
-      {
-        "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb5"
-      }
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-type"
     ]
   },
   {
-    "@id": "_:n7ba3bb95c40d44aa82458d6e6f18b8deb5",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#HealthMalnutritionAndOther",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
-      }
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ObservedImpacts",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnCitiesSettlementsInfrastructures",
+    "@id": "https://w3id.org/crima-ontology/ar6-impact#SpeciesRangeShift",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "https://w3id.org/crima-ontology/ar6-impact#Impact-cluster"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnHumanSystems"
+        "@id": "https://w3id.org/crima-ontology/ar6-impact#ImpactOnEcosystems"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/ar6-impact#ChangesInFreshwaterEcosystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/crima-ontology/ar6-impact#Impact-specificType"
     ]
   }
 ]

@@ -1,76 +1,76 @@
-<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Methane per year" .
-<http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The maximum ambient temperature in the environment."@en .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of carbon dioxide equivalent per year" .
-<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The minimum ambient temperature in the environment."@en .
-<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
-<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "mean ambient temperature"@en .
-<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of species per unit volume or area" .
-<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/2004/02/skos/core> .
-<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://qudt.org/schema/qudt> .
-<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/2004/02/skos/core#notation> "Strokes per km2 y-1" .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cunit" .
-<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter> <http://www.w3.org/2000/01/rdf-schema#label> "Molecules per square centimeter" .
 <https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic gigametre per year"@en .
-<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocommons/voaf> .
-<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/cunit#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Methane per year"@en .
-<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/2000/01/rdf-schema#label> "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions" .
-<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
-<https://w3id.org/crima-ontology/cunit#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Carbon Dioxide per year"@en .
-<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://codes.wmo.int/wmdr/unit/> .
-<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "GCOS-245 \"The 2022 GCOS ECVs Requirements\"\n2022 edition - Updated in 2025" .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Carbon Dioxide per year" .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#generalizes> <http://qudt.org/schema/qudt> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The average value is derived from a set of air temperature measurements that were recorded over a specific time period. "@en .
-<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
-<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
-<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/2000/01/rdf-schema#label> "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions"@en .
-<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of traits per unit volume or area" .
-<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of nitrous oxide per year"@en .
-<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
-<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of carbon dioxide equivalent per year"@en .
-<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "maximum ambient temperature"@en .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/2004/02/skos/core> .
-<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic Kilometers per Year" .
-<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#generalizes> <http://codes.wmo.int/wmdr/unit/> .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
-<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of molecular biology groups per unit volume or area" .
-<http://codes.wmo.int/wmdr/unit/Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic Kilometers per Year"@en .
-<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
-<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic gigametre per year" .
-<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of nitrous oxide per year" .
-<http://purl.org/vocommons/voaf#generalizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocommons/voaf> .
 <https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "minimum ambient temperature"@en .
+<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "mean ambient temperature"@en .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of carbon dioxide equivalent per year"@en .
+<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
+<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/2000/01/rdf-schema#label> "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions" .
+<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "GCOS-245 \"The 2022 GCOS ECVs Requirements\"\n2022 edition - Updated in 2025" .
+<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The minimum ambient temperature in the environment."@en .
+<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter> <http://www.w3.org/2000/01/rdf-schema#label> "Molecules per square centimeter" .
+<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic Kilometers per Year" .
+<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic gigametre per year"@en .
+<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://codes.wmo.int/wmdr/unit/Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/2000/01/rdf-schema#label> "Kilograms of equivalent per square metre per year: Mass flux of carbon dioxide equivalent emissions"@en .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Carbon Dioxide per year" .
+<https://w3id.org/crima-ontology/cunit#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The maximum ambient temperature in the environment."@en .
+<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://qudt.org/schema/qudt> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of nitrous oxide per year"@en .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Methane per year"@en .
+<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
+<http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Carbon Dioxide per year"@en .
+<https://w3id.org/crima-ontology/cunit#NumberOfSpeciesPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of species per unit volume or area" .
+<https://w3id.org/crima-ontology/cunit#> <http://www.w3.org/2002/07/owl#imports> <http://codes.wmo.int/wmdr/unit/> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#KiloGM-CO2-PER-M2-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#MoleculesPerSquareCentimeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of nitrous oxide per year" .
+<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/crima-ontology/cquak#> .
+<https://w3id.org/crima-ontology/cunit#StrokesPerSquareKilometerPerYear> <http://www.w3.org/2004/02/skos/core#notation> "Strokes per km2 y-1" .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#generalizes> <http://qudt.org/schema/qudt> .
+<https://w3id.org/crima-ontology/cunit#Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic gigametre per year" .
+<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#generalizes> <http://codes.wmo.int/wmdr/unit/> .
+<https://w3id.org/crima-ontology/cunit#NumberOfTraitsPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of traits per unit volume or area" .
+<https://w3id.org/crima-ontology/cunit#kiloM3-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Cubic Kilometers per Year"@en .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "maximum ambient temperature"@en .
+<https://w3id.org/crima-ontology/cunit#NumberOfMolecularBiologyGroupsPerUnitVolumeOrArea> <http://www.w3.org/2000/01/rdf-schema#label> "Number of molecular biology groups per unit volume or area" .
+<https://w3id.org/crima-ontology/cquak#MinAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cunit" .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CO2eq-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of carbon dioxide equivalent per year" .
+<http://purl.org/vocommons/voaf#generalizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/cunit#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/crima-ontology/cunit#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-N2O-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/cunit#Unit> .
+<https://w3id.org/crima-ontology/cquak#MeanAmbientTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The average value is derived from a set of air temperature measurements that were recorded over a specific time period. "@en .
+<https://w3id.org/crima-ontology/cunit#GigaM3-PER-YR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/cunit#MegaGM-CH4-PER-YR> <http://www.w3.org/2000/01/rdf-schema#label> "Megagrams of Methane per year" .
+<https://w3id.org/crima-ontology/cquak#MaxAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/cunit#Unit> .

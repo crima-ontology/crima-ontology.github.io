@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://crima-ontology.github.io/modules/ccore/ccore.html">
+        <link rel="canonical" href="https://crima-ontology.github.io/latest/modules/ccore/ccore.html">
       
       
         <link rel="prev" href="../ctlo/ctlo.html">
@@ -493,17 +493,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#concept" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#AdaptationOption" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -954,34 +943,6 @@
     <span class="md-ellipsis">
       
         triggers
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annotation-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annotation Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Annotation Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        references
       
     </span>
   </a>
@@ -1602,17 +1563,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#concept" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#AdaptationOption" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2075,34 +2025,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#annotation-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annotation Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Annotation Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        references
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#namespaces" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2285,39 +2207,6 @@
 </div>
 
 <h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
-<h3 id="concept">Concept<a class="headerlink" href="#concept" title="Permanent link">&para;</a></h3>
-<div class="pylode">
- <table>
-  <tr>
-   <th>
-    IRI
-   </th>
-   <td>
-    <code>
-     http://www.w3.org/2004/02/skos/core#Concept
-    </code>
-   </td>
-  </tr>
-  <tr>
-   <th>
-    <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
-     In Domain Of
-    </a>
-   </th>
-   <td>
-    <span>
-     <a href="#classifies">
-      ccore:classifies
-     </a>
-     <sup class="sup-op" title="OWL Object Property">
-      op
-     </sup>
-    </span>
-   </td>
-  </tr>
- </table>
-</div>
-
 <h3 id="AdaptationOption">Adaptation Option<a class="headerlink" href="#AdaptationOption" title="Permanent link">&para;</a></h3>
 <div class="pylode">
  <table>
@@ -2435,8 +2324,8 @@
    <td>
     <span>
      <span>
-      <a href="n3b039a365d7b4e6784f586ce4a1bb74eb30">
-       n3b039a365d7b4e6784f586ce4a1bb74eb30
+      <a href="nc2d65b7e13a641feadd1bb36c32d5444b30">
+       None:nc2d65b7e13a641feadd1bb36c32d5444b30
       </a>
       <span>
        <span class="cardinality">
@@ -2456,6 +2345,18 @@
       <br/>
      </span>
     </span>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_CascadingEvent["&lt;b&gt;ccore:CascadingEvent&lt;/b&gt;"]
+    click ccore_CascadingEvent href "https://w3id.org/crima-ontology/ccore#CascadingEvent"
+    ccore_ThreatPerdurant["ccore:ThreatPerdurant"]
+    click ccore_ThreatPerdurant href "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+    ccore_CascadingEvent --&gt;|rdfs:subClassOf| ccore_ThreatPerdurant</code></pre>
    </td>
   </tr>
  </table>
@@ -2506,8 +2407,8 @@
    </th>
    <td>
     <span>
-     <a href="https://w3id.org/crima-ontology/ctlo#Process">
-      ctlo:Process
+     <a href="https://w3id.org/crima-ontology/ctlo#Event">
+      ctlo:Event
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -2517,8 +2418,8 @@
      or
     </span>
     <span>
-     <a href="https://w3id.org/crima-ontology/ctlo#Event">
-      ctlo:Event
+     <a href="https://w3id.org/crima-ontology/ctlo#Process">
+      ctlo:Process
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -2557,6 +2458,18 @@
       c
      </sup>
     </span>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_Commitment-based["&lt;b&gt;ccore:Commitment-based&lt;/b&gt;"]
+    click ccore_Commitment-based href "https://w3id.org/crima-ontology/ccore#Commitment-based"
+    ccore_EcosystemService["ccore:EcosystemService"]
+    click ccore_EcosystemService href "https://w3id.org/crima-ontology/ccore#EcosystemService"
+    ccore_Commitment-based --&gt;|rdfs:subClassOf| ccore_EcosystemService</code></pre>
    </td>
   </tr>
  </table>
@@ -2616,6 +2529,21 @@
       </span>
      </li>
     </ul>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_EcosystemService["&lt;b&gt;ccore:EcosystemService&lt;/b&gt;"]
+    click ccore_EcosystemService href "https://w3id.org/crima-ontology/ccore#EcosystemService"
+    ccore_Commitment-based["ccore:Commitment-based"]
+    click ccore_Commitment-based href "https://w3id.org/crima-ontology/ccore#Commitment-based"
+    ccore_UnintensionallyProvided["ccore:UnintensionallyProvided"]
+    click ccore_UnintensionallyProvided href "https://w3id.org/crima-ontology/ccore#UnintensionallyProvided"
+    ccore_Commitment-based --&gt;|rdfs:subClassOf| ccore_EcosystemService
+    ccore_UnintensionallyProvided --&gt;|rdfs:subClassOf| ccore_EcosystemService</code></pre>
    </td>
   </tr>
  </table>
@@ -2698,8 +2626,8 @@ threatPerdurant(O, P) .
      <li>
       <span>
        <span>
-        <a href="n3b039a365d7b4e6784f586ce4a1bb74eb36">
-         n3b039a365d7b4e6784f586ce4a1bb74eb36
+        <a href="nc2d65b7e13a641feadd1bb36c32d5444b36">
+         None:nc2d65b7e13a641feadd1bb36c32d5444b36
         </a>
         <span>
          <span class="cardinality">
@@ -2707,8 +2635,8 @@ threatPerdurant(O, P) .
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb37">
-            n3b039a365d7b4e6784f586ce4a1bb74eb37
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b37">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b37
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -2851,8 +2779,8 @@ threatPerdurant(O, P) .
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb42">
-            n3b039a365d7b4e6784f586ce4a1bb74eb42
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b42">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b42
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -2897,6 +2825,18 @@ threatPerdurant(O, P) .
     </ul>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_Exposure["&lt;b&gt;ccore:Exposure&lt;/b&gt;"]
+    click ccore_Exposure href "https://w3id.org/crima-ontology/ccore#Exposure"
+    ctlo_Quality["ctlo:Quality"]
+    click ctlo_Quality href "https://w3id.org/crima-ontology/ctlo#Quality"
+    ccore_Exposure --&gt;|rdfs:subClassOf| ctlo_Quality</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -2928,6 +2868,18 @@ threatPerdurant(O, P) .
       c
      </sup>
     </span>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_ExtrinsicVulnerability["&lt;b&gt;ccore:ExtrinsicVulnerability&lt;/b&gt;"]
+    click ccore_ExtrinsicVulnerability href "https://w3id.org/crima-ontology/ccore#ExtrinsicVulnerability"
+    ccore_Vulnerability["ccore:Vulnerability"]
+    click ccore_Vulnerability href "https://w3id.org/crima-ontology/ccore#Vulnerability"
+    ccore_ExtrinsicVulnerability --&gt;|rdfs:subClassOf| ccore_Vulnerability</code></pre>
    </td>
   </tr>
  </table>
@@ -3068,8 +3020,8 @@ Sales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., &amp; M
    <td>
     <span>
      <span>
-      <a href="n3b039a365d7b4e6784f586ce4a1bb74eb47">
-       n3b039a365d7b4e6784f586ce4a1bb74eb47
+      <a href="nc2d65b7e13a641feadd1bb36c32d5444b47">
+       None:nc2d65b7e13a641feadd1bb36c32d5444b47
       </a>
       <span>
        <span class="cardinality">
@@ -3077,8 +3029,8 @@ Sales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., &amp; M
        </span>
        <span>
         <span>
-         <a href="n3b039a365d7b4e6784f586ce4a1bb74eb48">
-          n3b039a365d7b4e6784f586ce4a1bb74eb48
+         <a href="nc2d65b7e13a641feadd1bb36c32d5444b48">
+          None:nc2d65b7e13a641feadd1bb36c32d5444b48
          </a>
          <sup class="sup-c" title="OWL/RDFS Class">
           c
@@ -3089,6 +3041,18 @@ Sales, T. P., Baião, F., Guizzardi, G., Almeida, J. P. A., Guarino, N., &amp; M
       <br/>
      </span>
     </span>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_Hazard["&lt;b&gt;ccore:Hazard&lt;/b&gt;"]
+    click ccore_Hazard href "https://w3id.org/crima-ontology/ccore#Hazard"
+    ccore_ThreatPerdurant["ccore:ThreatPerdurant"]
+    click ccore_ThreatPerdurant href "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+    ccore_Hazard --&gt;|rdfs:subClassOf| ccore_ThreatPerdurant</code></pre>
    </td>
   </tr>
  </table>
@@ -3203,8 +3167,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb50">
-            n3b039a365d7b4e6784f586ce4a1bb74eb50
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b50">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b50
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -3228,8 +3192,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb60">
-            n3b039a365d7b4e6784f586ce4a1bb74eb60
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b60">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b60
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -3283,8 +3247,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb73">
-            n3b039a365d7b4e6784f586ce4a1bb74eb73
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b73">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b73
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -3313,8 +3277,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb77">
-            n3b039a365d7b4e6784f586ce4a1bb74eb77
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b77">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b77
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -3362,6 +3326,18 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
     </span>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_IntrinsicVulnerability["&lt;b&gt;ccore:IntrinsicVulnerability&lt;/b&gt;"]
+    click ccore_IntrinsicVulnerability href "https://w3id.org/crima-ontology/ccore#IntrinsicVulnerability"
+    ccore_Vulnerability["ccore:Vulnerability"]
+    click ccore_Vulnerability href "https://w3id.org/crima-ontology/ccore#Vulnerability"
+    ccore_IntrinsicVulnerability --&gt;|rdfs:subClassOf| ccore_Vulnerability</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -3388,6 +3364,18 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
     <a href="http://www.w3.org/ns/sosa/Observation">
      sosa:Observation
     </a>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_MeteorologicalObservation["&lt;b&gt;ccore:MeteorologicalObservation&lt;/b&gt;"]
+    click ccore_MeteorologicalObservation href "https://w3id.org/crima-ontology/ccore#MeteorologicalObservation"
+    sosa_Observation["sosa:Observation"]
+    click sosa_Observation href "http://www.w3.org/ns/sosa/Observation"
+    ccore_MeteorologicalObservation --&gt;|rdfs:subClassOf| sosa_Observation</code></pre>
    </td>
   </tr>
  </table>
@@ -3459,8 +3447,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
    </th>
    <td>
     <span>
-     <a href="https://w3id.org/crima-ontology/ctlo#Process">
-      ctlo:Process
+     <a href="https://w3id.org/crima-ontology/ctlo#Event">
+      ctlo:Event
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -3470,8 +3458,8 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
      or
     </span>
     <span>
-     <a href="https://w3id.org/crima-ontology/ctlo#Event">
-      ctlo:Event
+     <a href="https://w3id.org/crima-ontology/ctlo#Process">
+      ctlo:Process
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -3593,6 +3581,21 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
     </ul>
    </td>
   </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_ThreatPerdurant["&lt;b&gt;ccore:ThreatPerdurant&lt;/b&gt;"]
+    click ccore_ThreatPerdurant href "https://w3id.org/crima-ontology/ccore#ThreatPerdurant"
+    ccore_CascadingEvent["ccore:CascadingEvent"]
+    click ccore_CascadingEvent href "https://w3id.org/crima-ontology/ccore#CascadingEvent"
+    ccore_Hazard["ccore:Hazard"]
+    click ccore_Hazard href "https://w3id.org/crima-ontology/ccore#Hazard"
+    ccore_CascadingEvent --&gt;|rdfs:subClassOf| ccore_ThreatPerdurant
+    ccore_Hazard --&gt;|rdfs:subClassOf| ccore_ThreatPerdurant</code></pre>
+   </td>
+  </tr>
  </table>
 </div>
 
@@ -3624,6 +3627,18 @@ impactsOn(I, O), refersTo(I, G), dpo:dependsOn(I, V), dpo:dependsOn(I, Exp), dpo
       c
      </sup>
     </span>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_UnintensionallyProvided["&lt;b&gt;ccore:UnintensionallyProvided&lt;/b&gt;"]
+    click ccore_UnintensionallyProvided href "https://w3id.org/crima-ontology/ccore#UnintensionallyProvided"
+    ccore_EcosystemService["ccore:EcosystemService"]
+    click ccore_EcosystemService href "https://w3id.org/crima-ontology/ccore#EcosystemService"
+    ccore_UnintensionallyProvided --&gt;|rdfs:subClassOf| ccore_EcosystemService</code></pre>
    </td>
   </tr>
  </table>
@@ -3752,8 +3767,8 @@ inheresIn(V, O), proxyContent(V, Q1), manifestedBy(V, P), refersTo(V, G) .
          </span>
          <span>
           <span>
-           <a href="n3b039a365d7b4e6784f586ce4a1bb74eb88">
-            n3b039a365d7b4e6784f586ce4a1bb74eb88
+           <a href="nc2d65b7e13a641feadd1bb36c32d5444b88">
+            None:nc2d65b7e13a641feadd1bb36c32d5444b88
            </a>
            <sup class="sup-c" title="OWL/RDFS Class">
             c
@@ -3887,6 +3902,24 @@ inheresIn(V, O), proxyContent(V, Q1), manifestedBy(V, P), refersTo(V, G) .
       </span>
      </li>
     </ul>
+   </td>
+  </tr>
+  <tr>
+   <th></th>
+   <td>
+<pre class="mermaid"><code>%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 50, "padding": 8}, "themeVariables": {"fontSize": "13px"}}}%%
+flowchart RL
+    ccore_Vulnerability["&lt;b&gt;ccore:Vulnerability&lt;/b&gt;"]
+    click ccore_Vulnerability href "https://w3id.org/crima-ontology/ccore#Vulnerability"
+    ctlo_Quality["ctlo:Quality"]
+    click ctlo_Quality href "https://w3id.org/crima-ontology/ctlo#Quality"
+    ccore_ExtrinsicVulnerability["ccore:ExtrinsicVulnerability"]
+    click ccore_ExtrinsicVulnerability href "https://w3id.org/crima-ontology/ccore#ExtrinsicVulnerability"
+    ccore_IntrinsicVulnerability["ccore:IntrinsicVulnerability"]
+    click ccore_IntrinsicVulnerability href "https://w3id.org/crima-ontology/ccore#IntrinsicVulnerability"
+    ccore_Vulnerability --&gt;|rdfs:subClassOf| ctlo_Quality
+    ccore_ExtrinsicVulnerability --&gt;|rdfs:subClassOf| ccore_Vulnerability
+    ccore_IntrinsicVulnerability --&gt;|rdfs:subClassOf| ccore_Vulnerability</code></pre>
    </td>
   </tr>
  </table>
@@ -4541,8 +4574,8 @@ inheresIn(V, O), manifestedBy(V, P) .
      or
     </span>
     <span>
-     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
-      ctlo:PhysicalEndurant
+     <a href="#EcosystemService">
+      EcosystemService
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -4552,8 +4585,8 @@ inheresIn(V, O), manifestedBy(V, P) .
      or
     </span>
     <span>
-     <a href="#EcosystemService">
-      EcosystemService
+     <a href="https://w3id.org/crima-ontology/ctlo#PhysicalEndurant">
+      ctlo:PhysicalEndurant
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -4792,8 +4825,8 @@ geo:sfIntersect(G, G1), time:notDisjoint(T, T1) .
    </th>
    <td>
     <span>
-     <a href="#Vulnerability">
-      ccore:Vulnerability
+     <a href="#Exposure">
+      ccore:Exposure
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -4803,8 +4836,8 @@ geo:sfIntersect(G, G1), time:notDisjoint(T, T1) .
      or
     </span>
     <span>
-     <a href="#Exposure">
-      ccore:Exposure
+     <a href="#Vulnerability">
+      ccore:Vulnerability
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -4836,8 +4869,8 @@ geo:sfIntersect(G, G1), time:notDisjoint(T, T1) .
    </th>
    <td>
     <span>
-     <a href="#Vulnerability">
-      ccore:Vulnerability
+     <a href="#Impact">
+      ccore:Impact
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -4847,8 +4880,8 @@ geo:sfIntersect(G, G1), time:notDisjoint(T, T1) .
      or
     </span>
     <span>
-     <a href="#Impact">
-      ccore:Impact
+     <a href="#Vulnerability">
+      ccore:Vulnerability
      </a>
      <sup class="sup-c" title="OWL/RDFS Class">
       c
@@ -5052,23 +5085,6 @@ time:intervalOverlaps(T, T1) .
       c
      </sup>
     </span>
-   </td>
-  </tr>
- </table>
-</div>
-
-<h2 id="annotation-properties">Annotation Properties<a class="headerlink" href="#annotation-properties" title="Permanent link">&para;</a></h2>
-<h3 id="references">references<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
-<div class="pylode">
- <table>
-  <tr>
-   <th>
-    IRI
-   </th>
-   <td>
-    <code>
-     http://purl.org/dc/terms/references
-    </code>
    </td>
   </tr>
  </table>

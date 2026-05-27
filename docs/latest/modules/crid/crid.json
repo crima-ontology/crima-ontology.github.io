@@ -1,6 +1,24 @@
 [
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@id": "https://w3id.org/crima-ontology/crid#cadastralCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#metadataVoc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/crid#istatCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -17,7 +35,7 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -45,24 +63,6 @@
       {
         "@id": "http://purl.org/vocommons/voaf"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/crid#istatCode",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocommons/voaf#metadataVoc",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/crid#cadastralCode",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ]
   }
 ]
