@@ -7,13 +7,30 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:voaf="http://purl.org/vocommons/voaf#"
 >
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-product">
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-domain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Property"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b2"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b3"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b4"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dcterms:creator>World Meteorological Organization (WMO); Intergovernmental Oceanographic Commission of the United Nations Educational, Scientific and Cultural Organization (IOC-UNESCO); International Science Council (ISC); United Nations Environment Programme (UNEP); Copernicus Climate Change Service (C3S)</dcterms:creator>
+    <dcterms:source>https://library.wmo.int/records/item/58111-the-2022-gcos-ecvs-requirements?offset=8</dcterms:source>
+    <rdfs:comment>An Essential Climate Variable (ECV) is a physical, chemical or biological variable or a group of linked variables that critically contributes to the characterization of Earth's climate. GCOS currently specifies 55 ECVs. ECV datasets provide the empirical evidence needed to understand and predict the evolution of climate, to guide mitigation and adaptation measures, to assess risks and enable attribution of climate events to underlying causes, and to underpin climate services. They are required to support the work of the UNFCCC and the IPCC.</rdfs:comment>
+    <rdfs:isDefinedBy>GCOS-245 "The 2022 GCOS ECVs Requirements"
+2022 edition - Updated in 2025</rdfs:isDefinedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-variable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb7"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -34,79 +51,62 @@
     <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <voaf:specializes rdf:resource="http://www.w3.org/ns/sosa/common/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/crima-ontology/ecv#isProductOf"/>
-    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-variable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#isProductOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/isPropertyOf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-variable">
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-subdomain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b7"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b8"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb5"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables">
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-product">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <dcterms:creator>World Meteorological Organization (WMO); Intergovernmental Oceanographic Commission of the United Nations Educational, Scientific and Cultural Organization (IOC-UNESCO); International Science Council (ISC); United Nations Environment Programme (UNEP); Copernicus Climate Change Service (C3S)</dcterms:creator>
-    <dcterms:source>https://library.wmo.int/records/item/58111-the-2022-gcos-ecvs-requirements?offset=8</dcterms:source>
-    <rdfs:comment>An Essential Climate Variable (ECV) is a physical, chemical or biological variable or a group of linked variables that critically contributes to the characterization of Earth's climate. GCOS currently specifies 55 ECVs. ECV datasets provide the empirical evidence needed to understand and predict the evolution of climate, to guide mitigation and adaptation measures, to assess risks and enable attribution of climate events to underlying causes, and to underpin climate services. They are required to support the work of the UNFCCC and the IPCC.</rdfs:comment>
-    <rdfs:isDefinedBy>GCOS-245 "The 2022 GCOS ECVs Requirements"
-2022 edition - Updated in 2025</rdfs:isDefinedBy>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Property"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb2"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb3"/>
+    <rdfs:subClassOf rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb4"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b2">
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb2">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasUnit"/>
     <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/cunit#Unit"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-domain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b1"/>
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/crima-ontology/ecv#isProductOf"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-variable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#ECV-subdomain">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b5"/>
-    <rdfs:subClassOf rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b4">
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb6">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b5">
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-domain"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b7">
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb7">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-subdomain"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nb62f1f7c91174de08be03c4e2fcb9149b8">
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb8">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#EssentialClimaticVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n1891cee255334b1c88e6e7079cc3ca2fb5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/ecv#ECV-domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/ecv#isProductOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/isPropertyOf"/>
   </rdf:Description>
 </rdf:RDF>

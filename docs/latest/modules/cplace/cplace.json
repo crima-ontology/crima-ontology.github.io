@@ -1,5 +1,93 @@
 [
   {
+    "@id": "https://w3id.org/crima-ontology/cplace#Watercourse",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Natural or man-made channel through or along which water may flow [9], including large interstices in the ground, such as cave, cavern or a group of these in karst terrain."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "OGC® WaterML 2: Part 3 - Surface Hydrology Features (HY_Features) - Conceptual Model. Open Geospatial Consortium, 2018."
+      },
+      {
+        "@value": "http://www.opengis.net/doc/IS/hy-features/1.0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3."
+      },
+      {
+        "@value": "http://purl.obolibrary.org/obo/ENVO_00000029 "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Stream"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cplace#WeatherStation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "https://en.wikipedia.org/wiki/Weather_station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.\nhttps://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation."
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Place",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#Feature"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/ArchitecturalStructure",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#Feature"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sosa/Platform",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#Feature"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/crima-ontology/cplace#HydrologicalStation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -38,6 +126,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/crima-ontology/cplace#RoadNetwork",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Infrastructure"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/crima-ontology/cplace#CommunityDistrict",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "es. BURGRAVIATO, VALVENOSTA, BASSAATESINA,..."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/District"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/activitystreams#longitude",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.opengis.net/ont/geosparql#hasSerialization"
+      }
+    ]
+  },
+  {
     "@id": "https://www.w3.org/ns/activitystreams#latitude",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -49,35 +175,20 @@
     ]
   },
   {
-    "@id": "https://w3id.org/crima-ontology/cplace#Watercourse",
+    "@id": "https://w3id.org/crima-ontology/cplace#HealthDistrict",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "Natural or man-made channel through or along which water may flow [9], including large interstices in the ground, such as cave, cavern or a group of these in karst terrain."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "OGC® WaterML 2: Part 3 - Surface Hydrology Features (HY_Features) - Conceptual Model. Open Geospatial Consortium, 2018."
-      },
-      {
-        "@value": "http://www.opengis.net/doc/IS/hy-features/1.0"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3."
-      },
-      {
-        "@value": "http://purl.obolibrary.org/obo/ENVO_00000029 "
-      }
-    ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://dbpedia.org/ontology/Stream"
+        "@id": "http://dbpedia.org/ontology/District"
       }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -139,42 +250,6 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/sosa/Platform",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.opengis.net/ont/geosparql#Feature"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/cplace#HealthDistrict",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://dbpedia.org/ontology/District"
-      }
-    ]
-  },
-  {
-    "@id": "http://dbpedia.org/ontology/ArchitecturalStructure",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.opengis.net/ont/geosparql#Feature"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocommons/voaf#specializes",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
     "@id": "https://w3id.org/crima-ontology/cplace#HealthRegion",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -191,84 +266,9 @@
     ]
   },
   {
-    "@id": "https://www.w3.org/ns/activitystreams#longitude",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.opengis.net/ont/geosparql#hasSerialization"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@id": "http://purl.org/vocommons/voaf#specializes",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://dbpedia.org/ontology/Place",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.opengis.net/ont/geosparql#Feature"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/cplace#WeatherStation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@value": "https://en.wikipedia.org/wiki/Weather_station"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.\nhttps://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/cplace#RoadNetwork",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://dbpedia.org/ontology/Infrastructure"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/crima-ontology/cplace#CommunityDistrict",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "es. BURGRAVIATO, VALVENOSTA, BASSAATESINA,..."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://dbpedia.org/ontology/District"
-      }
     ]
   }
 ]

@@ -7,45 +7,7 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:voaf="http://purl.org/vocommons/voaf#"
 >
-  <rdf:Description rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HIP-ClassificationSystem"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HazardType"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HIP-ClassificationSystem"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://undrr-hip.org/HIP-ClassificationSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdfs:isDefinedBy rdf:resource="https://www.undrr.org/publication/documents-and-publications/hazard-information-profiles-hips-2025-version"/>
-    <rdfs:label xml:lang="en">UNDRR Hazard Information Profiles</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://undrr-hip.org/HazardCluster">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b1"/>
-    <rdfs:subClassOf rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b2"/>
-    <rdfs:label xml:lang="en">Hazard Cluster</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://undrr-hip.org/HazardType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b3"/>
-    <rdfs:label xml:lang="en">Hazard Type</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://undrr-hip.org/Organization">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b5">
+  <rdf:Description rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b2">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HIP-ClassificationSystem"/>
@@ -66,37 +28,75 @@
     <voaf:specializes rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     <voaf:specializes rdf:resource="http://www.w3.org/ns/org#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://undrr-hip.org/definitionSource">
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b4">
+  <rdf:Description rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
     <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HazardCluster"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://undrr-hip.org/HIP-ClassificationSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:isDefinedBy rdf:resource="https://www.undrr.org/publication/documents-and-publications/hazard-information-profiles-hips-2025-version"/>
+    <rdfs:label xml:lang="en">UNDRR Hazard Information Profiles</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://undrr-hip.org/SpecificHazard">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b4"/>
-    <rdfs:subClassOf rdf:nodeID="ndf271ebfa28e4815bd0db3385579eeb5b5"/>
+    <rdfs:subClassOf rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b4"/>
+    <rdfs:subClassOf rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b5"/>
     <rdfs:label xml:lang="en">Specific Hazard</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HIP-ClassificationSystem"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization">
-    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#extends">
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocommons/voaf#metadataVoc">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#specializes">
+  <rdf:Description rdf:about="https://undrr-hip.org/HazardCluster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b1"/>
+    <rdfs:subClassOf rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b2"/>
+    <rdfs:label xml:lang="en">Hazard Cluster</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://undrr-hip.org/HazardType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b3"/>
+    <rdfs:label xml:lang="en">Hazard Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://undrr-hip.org/Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HazardType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization">
+    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na13f9f3dcb014cdea348da0f0e7c0ee0b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://undrr-hip.org/HIP-ClassificationSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#extends">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://undrr-hip.org/definitionSource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>

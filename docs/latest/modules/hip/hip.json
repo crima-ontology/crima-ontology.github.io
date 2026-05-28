@@ -1,13 +1,13 @@
 [
   {
-    "@id": "https://undrr-hip.org/HazardType",
+    "@id": "https://undrr-hip.org/HazardCluster",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Hazard Type"
+        "@value": "Hazard Cluster"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -15,12 +15,31 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b3"
+        "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b1"
+      },
+      {
+        "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b2"
       }
     ]
   },
   {
-    "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b3",
+    "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://undrr-hip.org/HazardType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
+      }
+    ]
+  },
+  {
+    "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -42,17 +61,68 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/org#Organization",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://purl.org/dc/terms/Agent"
-      }
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
     "@id": "http://purl.org/vocommons/voaf#metadataVoc",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://undrr-hip.org/HazardType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Hazard Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      },
+      {
+        "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b3"
+      }
+    ]
+  },
+  {
+    "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://undrr-hip.org/HIP-ClassificationSystem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://undrr-hip.org/Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/org#Organization"
+      }
     ]
   },
   {
@@ -116,87 +186,9 @@
     ]
   },
   {
-    "@id": "https://undrr-hip.org/Organization",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/org#Organization"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocommons/voaf#specializes",
+    "@id": "http://purl.org/vocommons/voaf#extends",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://undrr-hip.org/SpecificHazard",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Specific Hazard"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      },
-      {
-        "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b4"
-      },
-      {
-        "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b5"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://undrr-hip.org/HazardCluster"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#broader"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://undrr-hip.org/HIP-ClassificationSystem"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
-      }
     ]
   },
   {
@@ -222,20 +214,28 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocommons/voaf#extends",
+    "@id": "http://www.w3.org/ns/org#Organization",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/dc/terms/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocommons/voaf#specializes",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "https://undrr-hip.org/HazardCluster",
+    "@id": "https://undrr-hip.org/SpecificHazard",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Hazard Cluster"
+        "@value": "Specific Hazard"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -243,21 +243,21 @@
         "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       {
-        "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b1"
+        "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b4"
       },
       {
-        "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b2"
+        "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b5"
       }
     ]
   },
   {
-    "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b1",
+    "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "https://undrr-hip.org/HazardType"
+        "@id": "https://undrr-hip.org/HazardCluster"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "@id": "_:ndf271ebfa28e4815bd0db3385579eeb5b2",
+    "@id": "_:na13f9f3dcb014cdea348da0f0e7c0ee0b5",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

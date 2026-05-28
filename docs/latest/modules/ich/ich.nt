@@ -1,324 +1,324 @@
-<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b47 <http://www.w3.org/2002/07/owl#members> _:n2a5f57d8c3ed4ae6977efd3687c41543b48 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b42 .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2004/02/skos/core#definition> "Vulnerability refers to the predisposition/propensity of exposed elements such as human beings, their livelihoods, and assets to be adversely affected by a natural hazard. This element contributes to and encompasses a variety of concepts and elements, including sensitivity or susceptibility to harm and/or lack of capacity to prevent, prepare, respond, cope and/or adapt (IPCC, 2021)."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b44 .
-<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Reduced irrigation (during a drought) leading to crop loss."@en .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b24 .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2004/02/skos/core#definition> "Combined impacts, exposure elements and vulnerabilities that describe potential risks highly relevant in the scope of the Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
-<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Confidence level"@en .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Underlying risk driver factor"@en .
-<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#label> "connection time lag"@en .
-<https://w3id.org/crima-ontology/ich#ImpactChainModel> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain model"@en .
-<https://w3id.org/crima-ontology/ich#ImpactChainConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain connection"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#domain> _:n2a5f57d8c3ed4ae6977efd3687c41543b1 .
-<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/crima-ontology/ich#ImpactChainModel> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b38 .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "Key risk"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b43 .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#label> "Mitigates"@en .
-<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
-<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:n2a5f57d8c3ed4ae6977efd3687c41543b10 .
-<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "'Impacts on' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
-<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Leads to"@en .
-<urn:swrl:var#z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b30 .
-<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#label> "time lag"@en .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n2a5f57d8c3ed4ae6977efd3687c41543b58 .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/2004/02/skos/core> .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Adaptation factor"@en .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b19 .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b34 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b36 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b37 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b15 .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b26 .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Impact factor"@en .
-<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/2000/01/rdf-schema#label> "target"@en .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2004/02/skos/core#definition> "It refers to the (non-climatic) risk drivers that may significantly alter the socio-economic or environmental situations and possibly amplify the negative consequences of impacts by acting on their determinants (e.g., vulnerability or exposure) but cannot be mitigated or controlled within the scope of the Impact Chain model."@en .
-<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium confidence level. This refers to moderate evidence, which includes news reports, stakeholder input, expert opinions, and combinations of these sources."@en .
-<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/2000/01/rdf-schema#comment> "Low confidence level. This refers to limited evidence, ranging from having no data supporting the element to only newspaper articles supporting it."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#label> "Affects"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Dengue infection leading to health deterioration."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/2000/01/rdf-schema#label> "direct affects"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/2000/01/rdf-schema#label> "saturated affects"@en .
-<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/2000/01/rdf-schema#label> "source"@en .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "'Impacts on' connection of an Impact Chain model. Indicates mainly a relationship between an impact and an exposed asset. Links an Impact factor to an Exposure factor. Example: An increase in power outages (Impact) impacts industries (Exposure)."@en .
-<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#source> .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Adaptation / Risk Mitigation Measure factor of an Impact Chain model."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#Mitigates> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/ich#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b60 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n2a5f57d8c3ed4ae6977efd3687c41543b60 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b58 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
-<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/2000/01/rdf-schema#label> "high"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n2a5f57d8c3ed4ae6977efd3687c41543b54 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b51 .
-<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Chain of 'Leads to' connections represented through an object property."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b29 .
-<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:n2a5f57d8c3ed4ae6977efd3687c41543b7 .
-<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/2000/01/rdf-schema#comment> "Chain of 'Affects' connections represented through an object property."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b23 .
-<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#label> "days to weeks"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b30 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n2a5f57d8c3ed4ae6977efd3687c41543b31 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b52 <http://www.w3.org/2003/11/swrl#head> _:n2a5f57d8c3ed4ae6977efd3687c41543b59 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b3 .
-<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies an optional time lag characterizing the causal-like relationship conveyed by an Impact Chain connection."@en .
-<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b27 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b28 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk factor of an Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumeration of confidence values. Applicable to Impact Chain elements such as factors and connections. Evaluated using a qualitative method based on evidence, reflecting the IPCC's approach to evaluating the validity of elements."@en .
-<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/2000/01/rdf-schema#label> "direct mitigates"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://reliefweb.int/report/world/climate-risk-sourcebook" .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b54 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
-<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Factor of an Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b35 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b13 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b14 .
-<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:n2a5f57d8c3ed4ae6977efd3687c41543b16 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
-<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b50 .
-<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/2000/01/rdf-schema#label> "direct impacts on"@en .
-<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b12 .
-<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "saturated affects"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability factor"@en .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b46 .
-<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain factor"@en .
-<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#label> "hazard factor"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#RiskFactor> .
-<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#label> "hours to days"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactsOn> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Risk factor"@en .
-<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/2000/01/rdf-schema#comment> "High confidence level. This refers to robust evidence, which includes data from official entities, scientific articles, books, and multiple credible sources."@en .
-<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/2000/01/rdf-schema#comment> "[ICconnection --source--> ICFactor]: This property is meant to be used to link the reification of an Impact Chain binary connection with its first argument."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b33 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
-<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "'Leads to' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Hazard factor of an Impact Chain model, including climatic drivers."@en .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b55 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
-<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumeration of time lag values. Applicable in the context of a connection between two factors. Refers to the time lapse between the incidence of the source factor and the subsequent factor, especially in relation to the interactions from hazard to hazard, hazard to impact, and impact to impact. Example for Increased in extreme heat -> Increased in heat stress: Although the response to heat is immediate, prolonged exposure time is required to generate heat stress, and this duration can vary from hours to days, depending on the element exposed."@en .
-<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#range> _:n2a5f57d8c3ed4ae6977efd3687c41543b4 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b16 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b17 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b58 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2004/02/skos/core#definition> "The (presence of) people, livelihoods, species or ecosystems, environmental functions, services, and resources, infrastructure, or economic, social, or cultural assets in places and settings that could be adversely affected (IPCC, 2021)."@en .
-<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook - Zebisch et al., 2023)"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b57 .
-<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
-<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b60 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#directLeadsTo> .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/2000/01/rdf-schema#comment> "'Affects connection' represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b52 <http://www.w3.org/2003/11/swrl#body> _:n2a5f57d8c3ed4ae6977efd3687c41543b53 .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
 <https://w3id.org/crima-ontology/ich#> <http://purl.org/dc/terms/title> "Impact Chain Module"@en .
-<http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b41 .
-<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/2000/01/rdf-schema#comment> "[ICconnections --target--> ICFactor]: This property is meant to be used to link the reification of an Impact Chain binary connection with its secoond argument."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n2a5f57d8c3ed4ae6977efd3687c41543b56 .
-<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/2000/01/rdf-schema#comment> "'Mitigates' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2004/02/skos/core#definition> "Effect or consequence caused by a hazard or another impact. Within an Impact Chain model, Impacts relate to adverse (negative) consequences that can be considered as potential materializations of risks."@en .
-<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the confidence level of an Impact Chain factor or connection."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2004/02/skos/core#definition> "Measure to decrease the negative consequences of an impact by addressing one or more vulnerabilities or impacting mechanisms."@en .
-<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.preventionweb.net/understanding-disaster-risk/component-risk/hazard. Extensive classification: UNDRR 2021 (https://www.undrr.org/publication/hazard-definition-and-classification-review-technical-report);  Climate related hazard indices for Europe (https://www.eea.europa.eu/publications/europes-changing-climate-hazards-1/what-will-the-future-bring/projected-changes-in-climate-related/view - Crespi et al., 2020)"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b6 .
-<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2004/02/skos/core#definition> "Climatic influence, climatic or non-climatic event or trend that may constitute a hazard to the exposed assets and systems and result in an impact and possibly a risk (with damage or loss)."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b58 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#target> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b56 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
-<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Prolonged rainfall leading to flooding."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "Risk mitigation measure" .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b9 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b49 .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#label> "weeks to months"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b10 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b11 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b18 .
-<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Impact Chain model to its factors and connections."@en .
-<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "direct leads to"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#comment> "'Affects' connection of an Impact Chain model. Indicates a generic relationship where one element is supposed to alter (in intensity or geographic extent) the second one in some way (not necessarily based on a causal link). Links a Vulnerability to a Impact/Risk factor. Example: Lack of land ownership (Vulnerability) affects the disruption of agricultural livelihoods in a flood (Impact)."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b39 <http://www.w3.org/2002/07/owl#members> _:n2a5f57d8c3ed4ae6977efd3687c41543b40 .
-<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#label> "months to years"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:n2a5f57d8c3ed4ae6977efd3687c41543b13 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b20 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n2a5f57d8c3ed4ae6977efd3687c41543b21 .
-<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://repository.ifla.org/rest/api/core/bitstreams/3016edd2-d431-4d27-84f9-33d6821f5203/content> .
-<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Impact factor of an Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulnerability factor of an Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
-<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "INFORM.MOVE Framework (https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology - Birkmann et al., 2013) (both for risk assessment but incl. Classification of vulnerability components)."@en .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#label> "confidence"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b21 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b22 .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocommons/voaf> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: An Earthquake (hazard) can trigger (leads to) a landslide."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "'Leads to' connection of an Impact Chain model. Indicates a relationship where one factor contributes to another (often indicating a causal relationship). Links a Hazard to a Hazard/Impact factor, or an Impact to another Impact factor. Example: An increase in average temperature (Hazard) leads to the melting of glaciers (Impact)."@en .
-<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-<https://w3id.org/crima-ontology/ich#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/2004/02/skos/core> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b7 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b8 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#Affects> .
-<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#label> "minutes to hours"@en .
-<https://w3id.org/crima-ontology/ich#ImpactChainModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "\"Definition of FRBROO A Conceptual Model for Bibliographic Information in Object-Oriented Formalism\"\n\nPrepared by: Working Group on FRBR/CRM Dialogue (also referred to as: International Working Group on\nFRBR and CIDOC CRM Harmonisation), affiliated to the IFLA FRBR Review Group, reporting to the IFLA Cataloguing Section\n\nEdited by:\nChryssoula Bekiari, Martin Doerr, Patrick Le Bœuf, Pat Riva\n\nWith contributions from:\nTrond Aalberg, Jérôme Barthélémy, Chryssoula Bekiari, Guillaume Boutard, Martin Doerr, Günther Görz, Dolores Iorizzo, Max Jacob, Carlos Lamsfus, Patrick Le Bœuf, Mika Nyman, João Oliveira, Christian Emil Ore, Allen H. Renear, Pat Riva, Richard Smiraglia, Stephen Stead, Maja Žumer, and others"@en .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b25 .
-<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#AdaptationFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#ExposureFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
-<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b20 .
-<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "IPCC WGII AR5 (https://www.ipcc.ch/site/assets/uploads/2018/02/WGIIAR5-PartA_FINAL.pdf): categories of adaptation options (page 845) (Field et al., 2014)."@en .
-<http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/2000/01/rdf-schema#label> "medium"@en .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Underlying risk driver factor of an Impact Chain model."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#AdaptationFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#LeadsTo> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
-<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "No standard reference, see IPCC, UNDRR (https://www.undrr.org/terminology/exposure), Prevention web (https://www.preventionweb.net/understanding-disaster-risk/component-risk/exposure), Charim or Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook)."@en .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure factor of an Impact Chain model."@en .
-<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
-<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#comment> "'Mitigates' connection of an Impact Chain model. Indicates a relationship that aims to reduce vulnerability or impacts. Links an Adaptation factor to a Vulnerability/Impact factor. Example: An improved irrigation technique (adaptation measure) mitigates the decrease in crop yield (impact) during droughts."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/ich#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b60 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
-<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "PAR, Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook - Zebisch et al., 2023) and Forin (https://www.irdrinternational.org/pdf/uploads/files/p0Rm0Zgt1EyRt4vABHAn4IOUXCig6WE5xi9iVri9.pdf)."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b54 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/crima-ontology/ich#LeadsTo> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b4 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b5 .
-<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/2000/01/rdf-schema#label> "low"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#label> "Impacts on"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b35 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n2a5f57d8c3ed4ae6977efd3687c41543b36 .
-<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b26 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n2a5f57d8c3ed4ae6977efd3687c41543b27 .
-<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure factor"@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b1 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b2 .
-<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
-<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b31 <http://www.w3.org/2002/07/owl#unionOf> _:n2a5f57d8c3ed4ae6977efd3687c41543b32 .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ExposureFactor> .
-<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Unsustainable agricultural practices leading to soil erosion."@en .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ich" .
+_:nfd2b7f90ef50431a978bf28b52752b05b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#label> "Affects"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b60 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
+_:nfd2b7f90ef50431a978bf28b52752b05b52 <http://www.w3.org/2003/11/swrl#head> _:nfd2b7f90ef50431a978bf28b52752b05b59 .
+<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://repository.ifla.org/rest/api/core/bitstreams/3016edd2-d431-4d27-84f9-33d6821f5203/content> .
+<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:nfd2b7f90ef50431a978bf28b52752b05b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b41 .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b30 .
+_:nfd2b7f90ef50431a978bf28b52752b05b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Underlying risk driver factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:nfd2b7f90ef50431a978bf28b52752b05b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "Key risk"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/2000/01/rdf-schema#label> "target"@en .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#comment> "'Mitigates' connection of an Impact Chain model. Indicates a relationship that aims to reduce vulnerability or impacts. Links an Adaptation factor to a Vulnerability/Impact factor. Example: An improved irrigation technique (adaptation measure) mitigates the decrease in crop yield (impact) during droughts."@en .
+<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Confidence level"@en .
 <https://w3id.org/crima-ontology/ich#ImpactChainConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:n2a5f57d8c3ed4ae6977efd3687c41543b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n2a5f57d8c3ed4ae6977efd3687c41543b45 .
+_:nfd2b7f90ef50431a978bf28b52752b05b31 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b32 .
+_:nfd2b7f90ef50431a978bf28b52752b05b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/2000/01/rdf-schema#label> "saturated affects"@en .
+<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
+<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/2000/01/rdf-schema#label> "direct affects"@en .
+<https://w3id.org/crima-ontology/ich#ImpactChainModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Prolonged rainfall leading to flooding."@en .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:nfd2b7f90ef50431a978bf28b52752b05b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "'Leads to' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b58 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#target> .
+_:nfd2b7f90ef50431a978bf28b52752b05b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#ImpactChainConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain connection"@en .
+<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/2000/01/rdf-schema#comment> "[ICconnection --source--> ICFactor]: This property is meant to be used to link the reification of an Impact Chain binary connection with its first argument."@en .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+_:nfd2b7f90ef50431a978bf28b52752b05b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfd2b7f90ef50431a978bf28b52752b05b56 .
+<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Chain of 'Leads to' connections represented through an object property."@en .
+<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:nfd2b7f90ef50431a978bf28b52752b05b13 .
+_:nfd2b7f90ef50431a978bf28b52752b05b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b55 .
+<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium confidence level. This refers to moderate evidence, which includes news reports, stakeholder input, expert opinions, and combinations of these sources."@en .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b26 .
+_:nfd2b7f90ef50431a978bf28b52752b05b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b57 .
+<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/2000/01/rdf-schema#label> "medium"@en .
+<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumeration of time lag values. Applicable in the context of a connection between two factors. Refers to the time lapse between the incidence of the source factor and the subsequent factor, especially in relation to the interactions from hazard to hazard, hazard to impact, and impact to impact. Example for Increased in extreme heat -> Increased in heat stress: Although the response to heat is immediate, prolonged exposure time is required to generate heat stress, and this duration can vary from hours to days, depending on the element exposed."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b4 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b5 .
+_:nfd2b7f90ef50431a978bf28b52752b05b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b44 .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "'Leads to' connection of an Impact Chain model. Indicates a relationship where one factor contributes to another (often indicating a causal relationship). Links a Hazard to a Hazard/Impact factor, or an Impact to another Impact factor. Example: An increase in average temperature (Hazard) leads to the melting of glaciers (Impact)."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b38 .
+_:nfd2b7f90ef50431a978bf28b52752b05b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b3 .
+_:nfd2b7f90ef50431a978bf28b52752b05b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#AdaptationFactor> .
+<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b39 <http://www.w3.org/2002/07/owl#members> _:nfd2b7f90ef50431a978bf28b52752b05b40 .
+_:nfd2b7f90ef50431a978bf28b52752b05b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b6 .
+_:nfd2b7f90ef50431a978bf28b52752b05b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:nfd2b7f90ef50431a978bf28b52752b05b56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b24 .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure factor"@en .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "IPCC WGII AR5 (https://www.ipcc.ch/site/assets/uploads/2018/02/WGIIAR5-PartA_FINAL.pdf): categories of adaptation options (page 845) (Field et al., 2014)."@en .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Leads to"@en .
+<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/2000/01/rdf-schema#comment> "[ICconnections --target--> ICFactor]: This property is meant to be used to link the reification of an Impact Chain binary connection with its secoond argument."@en .
+<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#LeadsTo> .
+_:nfd2b7f90ef50431a978bf28b52752b05b34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
+_:nfd2b7f90ef50431a978bf28b52752b05b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nfd2b7f90ef50431a978bf28b52752b05b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b33 .
+<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/2000/01/rdf-schema#label> "direct impacts on"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Factor of an Impact Chain model."@en .
+<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/2000/01/rdf-schema#label> "direct mitigates"@en .
+<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#label> "confidence"@en .
+<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2004/02/skos/core#definition> "The (presence of) people, livelihoods, species or ecosystems, environmental functions, services, and resources, infrastructure, or economic, social, or cultural assets in places and settings that could be adversely affected (IPCC, 2021)."@en .
+<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/2000/01/rdf-schema#comment> "High confidence level. This refers to robust evidence, which includes data from official entities, scientific articles, books, and multiple credible sources."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#domain> _:nfd2b7f90ef50431a978bf28b52752b05b1 .
+<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/2000/01/rdf-schema#label> "connection time lag"@en .
+<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#label> "days to weeks"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b21 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b22 .
+<https://w3id.org/crima-ontology/ich#saturatedAffects> <http://www.w3.org/2000/01/rdf-schema#comment> "Chain of 'Affects' connections represented through an object property."@en .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b34 .
+<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#label> "months to years"@en .
+<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#range> _:nfd2b7f90ef50431a978bf28b52752b05b4 .
+_:nfd2b7f90ef50431a978bf28b52752b05b30 <http://www.w3.org/2002/07/owl#someValuesFrom> _:nfd2b7f90ef50431a978bf28b52752b05b31 .
+_:nfd2b7f90ef50431a978bf28b52752b05b7 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b8 .
+<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#label> "minutes to hours"@en .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b19 .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b46 .
+_:nfd2b7f90ef50431a978bf28b52752b05b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b49 .
+<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Adaptation / Risk Mitigation Measure factor of an Impact Chain model."@en .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b20 .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2004/02/skos/core#definition> "Measure to decrease the negative consequences of an impact by addressing one or more vulnerabilities or impacting mechanisms."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "PAR, Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook - Zebisch et al., 2023) and Forin (https://www.irdrinternational.org/pdf/uploads/files/p0Rm0Zgt1EyRt4vABHAn4IOUXCig6WE5xi9iVri9.pdf)."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
+<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#label> "weeks to months"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
+<https://w3id.org/crima-ontology/ich#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:nfd2b7f90ef50431a978bf28b52752b05b34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#AdaptationFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b15 .
+<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "direct leads to"@en .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+_:nfd2b7f90ef50431a978bf28b52752b05b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:nfd2b7f90ef50431a978bf28b52752b05b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfd2b7f90ef50431a978bf28b52752b05b54 .
+_:nfd2b7f90ef50431a978bf28b52752b05b13 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b14 .
+<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumeration of confidence values. Applicable to Impact Chain elements such as factors and connections. Evaluated using a qualitative method based on evidence, reflecting the IPCC's approach to evaluating the validity of elements."@en .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b25 .
+<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2004/02/skos/core#definition> "It refers to the (non-climatic) risk drivers that may significantly alter the socio-economic or environmental situations and possibly amplify the negative consequences of impacts by acting on their determinants (e.g., vulnerability or exposure) but cannot be mitigated or controlled within the scope of the Impact Chain model."@en .
+<https://w3id.org/crima-ontology/ich#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+_:nfd2b7f90ef50431a978bf28b52752b05b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#RiskFactor> .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#label> "Impacts on"@en .
+<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Dengue infection leading to health deterioration."@en .
+<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: An Earthquake (hazard) can trigger (leads to) a landslide."@en .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "INFORM.MOVE Framework (https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology - Birkmann et al., 2013) (both for risk assessment but incl. Classification of vulnerability components)."@en .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Hazard factor of an Impact Chain model, including climatic drivers."@en .
+<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Impact factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+_:nfd2b7f90ef50431a978bf28b52752b05b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#label> "hours to days"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b51 .
+_:nfd2b7f90ef50431a978bf28b52752b05b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ich" .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk factor of an Impact Chain model."@en .
+<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<https://w3id.org/crima-ontology/ich#directMitigates> <http://www.w3.org/2000/01/rdf-schema#comment> "'Mitigates' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
+<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#label> "time lag"@en .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#ImpactChainModel> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain model"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b52 <http://www.w3.org/2003/11/swrl#body> _:nfd2b7f90ef50431a978bf28b52752b05b53 .
+_:nfd2b7f90ef50431a978bf28b52752b05b35 <http://www.w3.org/2002/07/owl#someValuesFrom> _:nfd2b7f90ef50431a978bf28b52752b05b36 .
+_:nfd2b7f90ef50431a978bf28b52752b05b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/crima-ontology/ich#ImpactsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "'Impacts on' connection of an Impact Chain model. Indicates mainly a relationship between an impact and an exposed asset. Links an Impact factor to an Exposure factor. Example: An increase in power outages (Impact) impacts industries (Exposure)."@en .
+<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/2000/01/rdf-schema#comment> "'Affects connection' represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
+<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+_:nfd2b7f90ef50431a978bf28b52752b05b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfd2b7f90ef50431a978bf28b52752b05b58 .
+_:nfd2b7f90ef50431a978bf28b52752b05b16 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b17 .
+<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2004/02/skos/core#definition> "Climatic influence, climatic or non-climatic event or trend that may constitute a hazard to the exposed assets and systems and result in an impact and possibly a risk (with damage or loss)."@en .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "Risk mitigation measure" .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Unsustainable agricultural practices leading to soil erosion."@en .
+<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+_:nfd2b7f90ef50431a978bf28b52752b05b20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
+_:nfd2b7f90ef50431a978bf28b52752b05b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:nfd2b7f90ef50431a978bf28b52752b05b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b45 .
+_:nfd2b7f90ef50431a978bf28b52752b05b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfd2b7f90ef50431a978bf28b52752b05b60 .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2004/02/skos/core#definition> "Vulnerability refers to the predisposition/propensity of exposed elements such as human beings, their livelihoods, and assets to be adversely affected by a natural hazard. This element contributes to and encompasses a variety of concepts and elements, including sensitivity or susceptibility to harm and/or lack of capacity to prevent, prepare, respond, cope and/or adapt (IPCC, 2021)."@en .
+<https://w3id.org/crima-ontology/ich#medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/ich#ConfidenceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure factor of an Impact Chain model."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#Mitigates> .
+<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b12 .
+<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.preventionweb.net/understanding-disaster-risk/component-risk/hazard. Extensive classification: UNDRR 2021 (https://www.undrr.org/publication/hazard-definition-and-classification-review-technical-report);  Climate related hazard indices for Europe (https://www.eea.europa.eu/publications/europes-changing-climate-hazards-1/what-will-the-future-bring/projected-changes-in-climate-related/view - Crespi et al., 2020)"@en .
+<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Reduced irrigation (during a drought) leading to crop loss."@en .
+<https://w3id.org/crima-ontology/ich#timeLag> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies an optional time lag characterizing the causal-like relationship conveyed by an Impact Chain connection."@en .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/crima-ontology/ich#AdaptationFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Adaptation factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b1 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b2 .
+_:nfd2b7f90ef50431a978bf28b52752b05b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nfd2b7f90ef50431a978bf28b52752b05b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/2000/01/rdf-schema#comment> "Low confidence level. This refers to limited evidence, ranging from having no data supporting the element to only newspaper articles supporting it."@en .
+<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "\"Definition of FRBROO A Conceptual Model for Bibliographic Information in Object-Oriented Formalism\"\n\nPrepared by: Working Group on FRBR/CRM Dialogue (also referred to as: International Working Group on\nFRBR and CIDOC CRM Harmonisation), affiliated to the IFLA FRBR Review Group, reporting to the IFLA Cataloguing Section\n\nEdited by:\nChryssoula Bekiari, Martin Doerr, Patrick Le Bœuf, Pat Riva\n\nWith contributions from:\nTrond Aalberg, Jérôme Barthélémy, Chryssoula Bekiari, Guillaume Boutard, Martin Doerr, Günther Görz, Dolores Iorizzo, Max Jacob, Carlos Lamsfus, Patrick Le Bœuf, Mika Nyman, João Oliveira, Christian Emil Ore, Allen H. Renear, Pat Riva, Richard Smiraglia, Stephen Stead, Maja Žumer, and others"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactsOn> .
+_:nfd2b7f90ef50431a978bf28b52752b05b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/2004/02/skos/core> .
+_:nfd2b7f90ef50431a978bf28b52752b05b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#Affects> .
+<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:nfd2b7f90ef50431a978bf28b52752b05b16 .
+<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+<https://w3id.org/crima-ontology/ich#daysToWeeks> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b54 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/crima-ontology/ich#LeadsTo> .
+_:nfd2b7f90ef50431a978bf28b52752b05b58 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
+_:nfd2b7f90ef50431a978bf28b52752b05b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b23 .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Impact factor of an Impact Chain model."@en .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2004/02/skos/core#definition> "Combined impacts, exposure elements and vulnerabilities that describe potential risks highly relevant in the scope of the Impact Chain model."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b29 .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Underlying risk driver factor of an Impact Chain model."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b47 <http://www.w3.org/2002/07/owl#members> _:nfd2b7f90ef50431a978bf28b52752b05b48 .
+_:nfd2b7f90ef50431a978bf28b52752b05b10 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b11 .
+_:nfd2b7f90ef50431a978bf28b52752b05b30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
+_:nfd2b7f90ef50431a978bf28b52752b05b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactChainConnection> .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook - Zebisch et al., 2023)"@en .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/crima-ontology/ich#low> <http://www.w3.org/2000/01/rdf-schema#label> "low"@en .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#label> "Mitigates"@en .
+<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/crima-ontology/ich#ImpactChainModel> .
+<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<urn:swrl:var#z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:nfd2b7f90ef50431a978bf28b52752b05b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+<https://w3id.org/crima-ontology/ich#LeadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#source> <http://www.w3.org/2000/01/rdf-schema#label> "source"@en .
+<https://w3id.org/crima-ontology/ich#HazardFactor> <http://www.w3.org/2000/01/rdf-schema#label> "hazard factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b26 <http://www.w3.org/2002/07/owl#someValuesFrom> _:nfd2b7f90ef50431a978bf28b52752b05b27 .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocommons/voaf> .
+<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Impact Chain model to its factors and connections."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
+<https://w3id.org/crima-ontology/ich#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/ich#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/crima-ontology/ich#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/2000/01/rdf-schema#label> "high"@en .
+<https://w3id.org/crima-ontology/ich#hoursToDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+<https://w3id.org/crima-ontology/ich#ConnectionTimeLag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#monthsToYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfd2b7f90ef50431a978bf28b52752b05b35 .
+_:nfd2b7f90ef50431a978bf28b52752b05b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b54 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
+_:nfd2b7f90ef50431a978bf28b52752b05b60 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#directLeadsTo> .
+_:nfd2b7f90ef50431a978bf28b52752b05b26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
+<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+_:nfd2b7f90ef50431a978bf28b52752b05b56 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+<http://purl.org/vocommons/voaf#metadataVoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ExposureFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b27 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b28 .
+_:nfd2b7f90ef50431a978bf28b52752b05b25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#ExposureFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#VulnerabilityFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b18 .
+_:nfd2b7f90ef50431a978bf28b52752b05b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b50 .
+<https://w3id.org/crima-ontology/ich#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Risk factor"@en .
+<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConnectionTimeLag> .
+<https://w3id.org/crima-ontology/ich#VulnerabilityFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulnerability factor of an Impact Chain model."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b9 .
+_:nfd2b7f90ef50431a978bf28b52752b05b58 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> .
+<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:nfd2b7f90ef50431a978bf28b52752b05b7 .
+<https://w3id.org/crima-ontology/ich#Affects> <http://www.w3.org/2000/01/rdf-schema#comment> "'Affects' connection of an Impact Chain model. Indicates a generic relationship where one element is supposed to alter (in intensity or geographic extent) the second one in some way (not necessarily based on a causal link). Links a Vulnerability to a Impact/Risk factor. Example: Lack of land ownership (Vulnerability) affects the disruption of agricultural livelihoods in a flood (Impact)."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nfd2b7f90ef50431a978bf28b52752b05b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#Mitigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nfd2b7f90ef50431a978bf28b52752b05b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nfd2b7f90ef50431a978bf28b52752b05b35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#target> .
+_:nfd2b7f90ef50431a978bf28b52752b05b24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<https://w3id.org/crima-ontology/ich#ExposureFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "No standard reference, see IPCC, UNDRR (https://www.undrr.org/terminology/exposure), Prevention web (https://www.preventionweb.net/understanding-disaster-risk/component-risk/exposure), Charim or Climate Risk Sourcebook (https://reliefweb.int/report/world/climate-risk-sourcebook)."@en .
+<https://w3id.org/crima-ontology/ich#confidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the confidence level of an Impact Chain factor or connection."@en .
+<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+<https://w3id.org/crima-ontology/ich#directLeadsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:nfd2b7f90ef50431a978bf28b52752b05b10 .
+<https://w3id.org/crima-ontology/ich#high> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/crima-ontology/ich#ConfidenceLevel> .
+_:nfd2b7f90ef50431a978bf28b52752b05b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#ImpactFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2004/02/skos/core#definition> "Effect or consequence caused by a hazard or another impact. Within an Impact Chain model, Impacts relate to adverse (negative) consequences that can be considered as potential materializations of risks."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/crima-ontology/ich#HazardFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b43 .
+_:nfd2b7f90ef50431a978bf28b52752b05b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<https://w3id.org/crima-ontology/ich#UnderlyingRiskDriverFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/crima-ontology/ich#ImpactChainFactor> .
+_:nfd2b7f90ef50431a978bf28b52752b05b60 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+<https://w3id.org/crima-ontology/ich#weeksToMonths> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "M. Pittore, M. Zebisch, S. Cocuccioni, K. Renner, S. Fruchter, S. Schneiderbauer, Impact Chains - Towards a shared standard for complex risk conceptualization  v1.0, Eurac Research, 2026"@en .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:nfd2b7f90ef50431a978bf28b52752b05b56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/crima-ontology/ich#source> .
+<https://w3id.org/crima-ontology/ich#ImpactChainFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Chain factor"@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfd2b7f90ef50431a978bf28b52752b05b42 .
+<https://w3id.org/crima-ontology/ich#directAffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/crima-ontology/ich#source> .
+_:nfd2b7f90ef50431a978bf28b52752b05b36 <http://www.w3.org/2002/07/owl#unionOf> _:nfd2b7f90ef50431a978bf28b52752b05b37 .
+<https://w3id.org/crima-ontology/ich#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+<https://w3id.org/crima-ontology/ich#saturatedLeadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "saturated affects"@en .
+<https://w3id.org/crima-ontology/ich#directImpactsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "'Impacts on' connection represented through an object property directly linking the involved factors, in addition to a reified relationship individual."@en .
+_:nfd2b7f90ef50431a978bf28b52752b05b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/crima-ontology/ich#ImpactFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://reliefweb.int/report/world/climate-risk-sourcebook" .
+<https://w3id.org/crima-ontology/ich#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nfd2b7f90ef50431a978bf28b52752b05b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/ich#minutesToHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:nfd2b7f90ef50431a978bf28b52752b05b20 <http://www.w3.org/2002/07/owl#someValuesFrom> _:nfd2b7f90ef50431a978bf28b52752b05b21 .

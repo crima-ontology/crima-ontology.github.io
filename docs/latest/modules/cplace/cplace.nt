@@ -1,54 +1,54 @@
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://dbpedia.org/ontology/> .
-<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<https://w3id.org/crima-ontology/cplace#DrainageBasin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<https://www.w3.org/ns/activitystreams#longitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#hasSerialization> .
-<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://dbpedia.org/ontology/> .
-<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
-<https://w3id.org/crima-ontology/cplace#DrainageBasin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/NaturalPlace> .
-<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2004/02/skos/core#definition> "A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation." .
-<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/2004/02/skos/core#definition> "Hydrological station established for the observation of a specific element or elements in order to investigate hydrological events. (TR)" .
-<https://w3id.org/crima-ontology/cplace#HealthRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://en.wikipedia.org/wiki/Weather_station" .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://www.opengis.net/ont/geosparql> .
-<https://w3id.org/crima-ontology/cplace#RoadNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/ENVO_00000029 " .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/ns/sosa/common/> .
-<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/2000/01/rdf-schema#comment> "es. BURGRAVIATO, VALVENOSTA, BASSAATESINA,..." .
-<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Stream> .
-<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
-<https://www.w3.org/ns/activitystreams#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#extends> <https://w3id.org/crima-ontology/ctlo#> .
-<https://w3id.org/crima-ontology/cplace#HealthDistrict> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
-<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
 <https://w3id.org/crima-ontology/cplace#HealthRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
-<https://www.w3.org/ns/activitystreams#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/crima-ontology/cplace#HealthRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The sum of multiple contingous health districts (tentative)." .
-<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/common/> .
-<https://w3id.org/crima-ontology/cplace#HealthDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/doc/IS/hy-features/1.0" .
-<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3." .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <https://w3id.org/crima-ontology/ctlo#> .
-<http://dbpedia.org/ontology/ArchitecturalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://w3id.org/crima-ontology/cplace#Watercourse> <http://purl.org/dc/terms/description> "Natural or man-made channel through or along which water may flow [9], including large interstices in the ground, such as cave, cavern or a group of these in karst terrain." .
-<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cplace" .
-<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.\nhttps://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf" .
-<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/crima-ontology/ctlo#> .
+<https://w3id.org/crima-ontology/cplace#RoadNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
+<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3." .
-<https://w3id.org/crima-ontology/cplace#RoadNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Infrastructure> .
-<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/vocommons/voaf#extends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://www.w3.org/ns/activitystreams#latitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#hasSerialization> .
 <https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocommons/voaf> .
-<http://dbpedia.org/ontology/ArchitecturalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/cplace#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/crima-ontology/cplace#DrainageBasin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/NaturalPlace> .
+<https://w3id.org/crima-ontology/cplace#RoadNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Infrastructure> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/ns/sosa/common/> .
 <http://purl.org/vocommons/voaf#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#metadataVoc> <http://purl.org/vocab/vann/> .
+<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.w3.org/ns/activitystreams#latitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#hasSerialization> .
+<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2004/02/skos/core#definition> "A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate. The measurements taken include temperature, atmospheric pressure, humidity, wind speed, wind direction, and precipitation amounts. Wind measurements are taken with as few other obstructions as possible, while temperature and humidity measurements are kept free from direct solar radiation, or insolation." .
+<https://www.w3.org/ns/activitystreams#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/common/> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <https://w3id.org/crima-ontology/ctlo#> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/crima-ontology/cplace#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://dbpedia.org/ontology/> .
+<https://w3id.org/crima-ontology/cplace#HealthDistrict> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#extends> <https://w3id.org/crima-ontology/ctlo#> .
+<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/ArchitecturalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/2000/01/rdf-schema#comment> "es. BURGRAVIATO, VALVENOSTA, BASSAATESINA,..." .
+<https://w3id.org/crima-ontology/cplace#HydrologicalStation> <http://www.w3.org/2004/02/skos/core#definition> "Hydrological station established for the observation of a specific element or elements in order to investigate hydrological events. (TR)" .
+<https://w3id.org/crima-ontology/cplace#Watercourse> <http://purl.org/dc/terms/description> "Natural or man-made channel through or along which water may flow [9], including large interstices in the ground, such as cave, cavern or a group of these in karst terrain." .
+<https://w3id.org/crima-ontology/cplace#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Guide to Meteorological Instruments and Methods of Observation. WMO-No. 8. World Meteorological Organization, 2008.\nhttps://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf" .
+<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "International Glossary of Hydrology / Glossaire International d’Hydrologie. World Meteorological Organization, United Nations Educational, Scientific and Cultural Organization (eds.). WMO (Series), no385. WMO, Geneva (2016). ISBN 978-92-63-03385-8. ISBN 978-92-3-001154-3." .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://w3id.org/crima-ontology/cplace#HealthDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocommons/voaf#extends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/crima-ontology/cplace#DrainageBasin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/crima-ontology/cplace#HealthRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/activitystreams#longitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#hasSerialization> .
+<https://w3id.org/crima-ontology/cplace#HealthRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The sum of multiple contingous health districts (tentative)." .
+<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/crima-ontology/ctlo#> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cplace" .
+<https://w3id.org/crima-ontology/cplace#> <http://www.w3.org/2002/07/owl#imports> <http://dbpedia.org/ontology/> .
+<https://w3id.org/crima-ontology/cplace#> <http://purl.org/vocommons/voaf#specializes> <http://www.opengis.net/ont/geosparql> .
+<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.obolibrary.org/obo/ENVO_00000029 " .
+<https://w3id.org/crima-ontology/cplace#CommunityDistrict> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
 <https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "OGC® WaterML 2: Part 3 - Surface Hydrology Features (HY_Features) - Conceptual Model. Open Geospatial Consortium, 2018." .
+<https://www.w3.org/ns/activitystreams#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/crima-ontology/cplace#Watercourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Stream> .
+<http://dbpedia.org/ontology/ArchitecturalStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .

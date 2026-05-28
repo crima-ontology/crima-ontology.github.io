@@ -5,31 +5,26 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-classification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-Class_level2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:nodeID="n310976e67334475cb3b6fedd88662c11b3"/>
+    <rdfs:subClassOf rdf:nodeID="n310976e67334475cb3b6fedd88662c11b4"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CorineValue">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdfs:comment>A numerical value from the CORINE Land Cover nomenclature</rdfs:comment>
     <rdfs:label xml:lang="en">CORINE value</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-Class_level2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-classification"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-Class_level1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb1"/>
-    <rdfs:subClassOf rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb2"/>
+    <rdfs:subClassOf rdf:nodeID="n310976e67334475cb3b6fedd88662c11b1"/>
+    <rdfs:subClassOf rdf:nodeID="n310976e67334475cb3b6fedd88662c11b2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -37,17 +32,20 @@
     <vann:preferredNamespacePrefix>cclc</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/crima-ontology/cclc#</vann:preferredNamespaceUri>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-Class_level2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb3"/>
-    <rdfs:subClassOf rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb4"/>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-classification">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  <rdf:Description rdf:nodeID="n310976e67334475cb3b6fedd88662c11b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-classification"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb2">
+  <rdf:Description rdf:nodeID="n310976e67334475cb3b6fedd88662c11b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n310976e67334475cb3b6fedd88662c11b2">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-Class_level2"/>
@@ -55,7 +53,12 @@
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb1">
+  <rdf:Description rdf:nodeID="n310976e67334475cb3b6fedd88662c11b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-Class_level2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n310976e67334475cb3b6fedd88662c11b5">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/crima-ontology/cclc#CORINE-classification"/>
@@ -63,21 +66,18 @@
   <rdf:Description rdf:about="https://w3id.org/crima-ontology/cclc#CORINE-Class_level3">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:nodeID="n8529e788a22941e58a35afd5849d4c5cb5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subClassOf rdf:nodeID="n310976e67334475cb3b6fedd88662c11b5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>
