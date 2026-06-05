@@ -1,0 +1,12 @@
+name: w3id-test
+
+services:
+  apache2:
+    container_name: "${COMPOSE_PROJECT_NAME}-httpd"
+    image: httpd:2.4.58
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8080:80"
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    command: [ "/bin/sh", "-c", "sed -i -e '/LoadModule rewrite_module/s/^#//g' -e 's/AllowOverride None/AllowOverride All/g' /usr/local/apache2/conf/httpd.conf; exec httpd-foreground" ]
